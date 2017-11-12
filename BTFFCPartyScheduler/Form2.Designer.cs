@@ -159,7 +159,7 @@
             this.label1.Location = new System.Drawing.Point(83, 426);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 26);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "U1";
             // 
             // richTextBox2
@@ -178,7 +178,7 @@
             this.label2.Location = new System.Drawing.Point(302, 426);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 26);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 0;
             this.label2.Text = "U2";
             // 
             // richTextBox3
@@ -197,7 +197,7 @@
             this.label3.Location = new System.Drawing.Point(525, 426);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 26);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 0;
             this.label3.Text = "U3";
             // 
             // richTextBox4
@@ -216,7 +216,7 @@
             this.label4.Location = new System.Drawing.Point(745, 426);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 26);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 0;
             this.label4.Text = "U4";
             // 
             // richTextBox5
@@ -262,7 +262,7 @@
             this.label5.Location = new System.Drawing.Point(83, 507);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 26);
-            this.label5.TabIndex = 3;
+            this.label5.TabIndex = 0;
             this.label5.Text = "U5";
             // 
             // label6
@@ -272,7 +272,7 @@
             this.label6.Location = new System.Drawing.Point(301, 507);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 26);
-            this.label6.TabIndex = 3;
+            this.label6.TabIndex = 0;
             this.label6.Text = "U6";
             // 
             // label7
@@ -282,7 +282,7 @@
             this.label7.Location = new System.Drawing.Point(525, 507);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 26);
-            this.label7.TabIndex = 3;
+            this.label7.TabIndex = 0;
             this.label7.Text = "U7";
             // 
             // label8
@@ -292,7 +292,7 @@
             this.label8.Location = new System.Drawing.Point(745, 507);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 26);
-            this.label8.TabIndex = 3;
+            this.label8.TabIndex = 0;
             this.label8.Text = "U8";
             // 
             // richTextBox9
@@ -338,7 +338,7 @@
             this.label9.Location = new System.Drawing.Point(83, 588);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 26);
-            this.label9.TabIndex = 3;
+            this.label9.TabIndex = 0;
             this.label9.Text = "U9";
             // 
             // label10
@@ -348,7 +348,7 @@
             this.label10.Location = new System.Drawing.Point(297, 589);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 26);
-            this.label10.TabIndex = 3;
+            this.label10.TabIndex = 0;
             this.label10.Text = "U10";
             // 
             // label11
@@ -358,7 +358,7 @@
             this.label11.Location = new System.Drawing.Point(513, 589);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 26);
-            this.label11.TabIndex = 3;
+            this.label11.TabIndex = 0;
             this.label11.Text = "U11";
             // 
             // label12
@@ -368,7 +368,7 @@
             this.label12.Location = new System.Drawing.Point(733, 588);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 26);
-            this.label12.TabIndex = 3;
+            this.label12.TabIndex = 0;
             this.label12.Text = "U12";
             // 
             // richTextBox13
@@ -414,7 +414,7 @@
             this.label13.Location = new System.Drawing.Point(83, 674);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 26);
-            this.label13.TabIndex = 3;
+            this.label13.TabIndex = 0;
             this.label13.Text = "G1";
             // 
             // label14
@@ -424,7 +424,7 @@
             this.label14.Location = new System.Drawing.Point(301, 675);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(41, 26);
-            this.label14.TabIndex = 3;
+            this.label14.TabIndex = 0;
             this.label14.Text = "G2";
             // 
             // label15
@@ -434,7 +434,7 @@
             this.label15.Location = new System.Drawing.Point(524, 674);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 26);
-            this.label15.TabIndex = 3;
+            this.label15.TabIndex = 0;
             this.label15.Text = "G3";
             // 
             // label16
@@ -444,7 +444,7 @@
             this.label16.Location = new System.Drawing.Point(744, 674);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 26);
-            this.label16.TabIndex = 3;
+            this.label16.TabIndex = 0;
             this.label16.Text = "G4";
             // 
             // richTextBox17
@@ -472,7 +472,7 @@
             this.label17.Location = new System.Drawing.Point(81, 758);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 26);
-            this.label17.TabIndex = 3;
+            this.label17.TabIndex = 0;
             this.label17.Text = "G5";
             // 
             // label18
@@ -482,7 +482,7 @@
             this.label18.Location = new System.Drawing.Point(303, 758);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 26);
-            this.label18.TabIndex = 3;
+            this.label18.TabIndex = 0;
             this.label18.Text = "G6";
             // 
             // checkBox1
@@ -491,7 +491,8 @@
             this.checkBox1.Location = new System.Drawing.Point(202, 435);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(41, 17);
-            this.checkBox1.TabIndex = 19;
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "--->";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -502,7 +503,8 @@
             this.checkBox2.Location = new System.Drawing.Point(411, 435);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(41, 17);
-            this.checkBox2.TabIndex = 20;
+            this.checkBox2.TabIndex = 0;
+            this.checkBox2.TabStop = false;
             this.checkBox2.Text = "--->";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -513,7 +515,8 @@
             this.checkBox3.Location = new System.Drawing.Point(636, 435);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(41, 17);
-            this.checkBox3.TabIndex = 21;
+            this.checkBox3.TabIndex = 0;
+            this.checkBox3.TabStop = false;
             this.checkBox3.Text = "--->";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
@@ -524,7 +527,8 @@
             this.checkBox4.Location = new System.Drawing.Point(0, 516);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(41, 17);
-            this.checkBox4.TabIndex = 22;
+            this.checkBox4.TabIndex = 0;
+            this.checkBox4.TabStop = false;
             this.checkBox4.Text = "--->";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
@@ -535,7 +539,8 @@
             this.checkBox5.Location = new System.Drawing.Point(202, 516);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(41, 17);
-            this.checkBox5.TabIndex = 23;
+            this.checkBox5.TabIndex = 0;
+            this.checkBox5.TabStop = false;
             this.checkBox5.Text = "--->";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
@@ -546,7 +551,8 @@
             this.checkBox6.Location = new System.Drawing.Point(411, 516);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(41, 17);
-            this.checkBox6.TabIndex = 24;
+            this.checkBox6.TabIndex = 0;
+            this.checkBox6.TabStop = false;
             this.checkBox6.Text = "--->";
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
@@ -557,7 +563,8 @@
             this.checkBox7.Location = new System.Drawing.Point(636, 516);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(41, 17);
-            this.checkBox7.TabIndex = 25;
+            this.checkBox7.TabIndex = 0;
+            this.checkBox7.TabStop = false;
             this.checkBox7.Text = "--->";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
@@ -568,7 +575,8 @@
             this.checkBox8.Location = new System.Drawing.Point(0, 597);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(41, 17);
-            this.checkBox8.TabIndex = 26;
+            this.checkBox8.TabIndex = 0;
+            this.checkBox8.TabStop = false;
             this.checkBox8.Text = "--->";
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
@@ -579,7 +587,8 @@
             this.checkBox9.Location = new System.Drawing.Point(202, 597);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(41, 17);
-            this.checkBox9.TabIndex = 27;
+            this.checkBox9.TabIndex = 0;
+            this.checkBox9.TabStop = false;
             this.checkBox9.Text = "--->";
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
@@ -590,7 +599,8 @@
             this.checkBox10.Location = new System.Drawing.Point(411, 597);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(41, 17);
-            this.checkBox10.TabIndex = 28;
+            this.checkBox10.TabIndex = 0;
+            this.checkBox10.TabStop = false;
             this.checkBox10.Text = "--->";
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
@@ -601,7 +611,8 @@
             this.checkBox11.Location = new System.Drawing.Point(636, 597);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(41, 17);
-            this.checkBox11.TabIndex = 29;
+            this.checkBox11.TabIndex = 0;
+            this.checkBox11.TabStop = false;
             this.checkBox11.Text = "--->";
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
@@ -612,7 +623,8 @@
             this.checkBox12.Location = new System.Drawing.Point(0, 683);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(41, 17);
-            this.checkBox12.TabIndex = 30;
+            this.checkBox12.TabIndex = 0;
+            this.checkBox12.TabStop = false;
             this.checkBox12.Text = "--->";
             this.checkBox12.UseVisualStyleBackColor = true;
             this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
@@ -623,7 +635,8 @@
             this.checkBox13.Location = new System.Drawing.Point(202, 683);
             this.checkBox13.Name = "checkBox13";
             this.checkBox13.Size = new System.Drawing.Size(41, 17);
-            this.checkBox13.TabIndex = 31;
+            this.checkBox13.TabIndex = 0;
+            this.checkBox13.TabStop = false;
             this.checkBox13.Text = "--->";
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
@@ -634,7 +647,8 @@
             this.checkBox14.Location = new System.Drawing.Point(411, 683);
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.Size = new System.Drawing.Size(41, 17);
-            this.checkBox14.TabIndex = 32;
+            this.checkBox14.TabIndex = 0;
+            this.checkBox14.TabStop = false;
             this.checkBox14.Text = "--->";
             this.checkBox14.UseVisualStyleBackColor = true;
             this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
@@ -645,7 +659,8 @@
             this.checkBox15.Location = new System.Drawing.Point(636, 683);
             this.checkBox15.Name = "checkBox15";
             this.checkBox15.Size = new System.Drawing.Size(41, 17);
-            this.checkBox15.TabIndex = 33;
+            this.checkBox15.TabIndex = 0;
+            this.checkBox15.TabStop = false;
             this.checkBox15.Text = "--->";
             this.checkBox15.UseVisualStyleBackColor = true;
             this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
@@ -656,7 +671,8 @@
             this.checkBox16.Location = new System.Drawing.Point(0, 767);
             this.checkBox16.Name = "checkBox16";
             this.checkBox16.Size = new System.Drawing.Size(41, 17);
-            this.checkBox16.TabIndex = 34;
+            this.checkBox16.TabIndex = 0;
+            this.checkBox16.TabStop = false;
             this.checkBox16.Text = "--->";
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
@@ -667,7 +683,8 @@
             this.checkBox17.Location = new System.Drawing.Point(190, 767);
             this.checkBox17.Name = "checkBox17";
             this.checkBox17.Size = new System.Drawing.Size(41, 17);
-            this.checkBox17.TabIndex = 35;
+            this.checkBox17.TabIndex = 0;
+            this.checkBox17.TabStop = false;
             this.checkBox17.Text = "--->";
             this.checkBox17.UseVisualStyleBackColor = true;
             this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
@@ -678,7 +695,7 @@
             this.richTextBox19.Location = new System.Drawing.Point(443, 787);
             this.richTextBox19.Name = "richTextBox19";
             this.richTextBox19.Size = new System.Drawing.Size(203, 54);
-            this.richTextBox19.TabIndex = 17;
+            this.richTextBox19.TabIndex = 19;
             this.richTextBox19.Text = "";
             // 
             // richTextBox20
@@ -687,7 +704,7 @@
             this.richTextBox20.Location = new System.Drawing.Point(664, 787);
             this.richTextBox20.Name = "richTextBox20";
             this.richTextBox20.Size = new System.Drawing.Size(203, 54);
-            this.richTextBox20.TabIndex = 18;
+            this.richTextBox20.TabIndex = 20;
             this.richTextBox20.Text = "";
             // 
             // label19
@@ -697,7 +714,7 @@
             this.label19.Location = new System.Drawing.Point(505, 758);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 26);
-            this.label19.TabIndex = 3;
+            this.label19.TabIndex = 0;
             this.label19.Text = "Room 1";
             // 
             // label20
@@ -707,7 +724,7 @@
             this.label20.Location = new System.Drawing.Point(725, 758);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 26);
-            this.label20.TabIndex = 3;
+            this.label20.TabIndex = 0;
             this.label20.Text = "Room 2";
             // 
             // U3Taken
@@ -921,7 +938,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 844);
+            this.ClientSize = new System.Drawing.Size(864, 843);
             this.Controls.Add(this.R2Taken);
             this.Controls.Add(this.R1Taken);
             this.Controls.Add(this.G6Taken);

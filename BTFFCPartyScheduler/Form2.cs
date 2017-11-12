@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net; //for networkcredential part of email code
+using System.Net.Mail; //for email capabilities
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +20,8 @@ namespace BTFFCPartyScheduler
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            //Application.ApplicationExit += new EventHandler(Application_ApplicationExit); //for later
+            this.MaximizeBox = false;
+            //Application.ApplicationExit += new EventHandler(Application_ApplicationExit); //for later, maybe use this to confirm if the user wants to save before they exit the form
             U1Taken.Visible = false;
             U2Taken.Visible = false;
             U3Taken.Visible = false;
@@ -439,7 +442,7 @@ namespace BTFFCPartyScheduler
             {
                 R2Taken.Visible = false;
             }
-        }
+        }          
 
         //private void Application_ApplicationExit(object sender, EventArgs e)
         //{
@@ -447,3 +450,4 @@ namespace BTFFCPartyScheduler
         //}
     }
 }
+
