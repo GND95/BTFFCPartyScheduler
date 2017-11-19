@@ -44,5 +44,10 @@ namespace BTFFCPartyScheduler
             Form3 f3 = new Form3();
             f3.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Program written, coded, designed, and created entirely by Garrett DeBlois; November 2017", "Info");
+        }
     }
 }
