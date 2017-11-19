@@ -35,7 +35,6 @@ namespace BTFFCPartyScheduler
                 }
                 else if (dialogResult == DialogResult.No)
                 {
-                    //do nothing (yet)
                 }
             }
         }

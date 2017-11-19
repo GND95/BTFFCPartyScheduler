@@ -9,11 +9,13 @@ using System.Net.Mail; //for email capabilities
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO; //for Streamreader and Streamwriter
 
 namespace BTFFCPartyScheduler
 {
     public partial class Form2 : Form
     {
+        bool getInitialData = true; //use this to pull the information from the text files when this form is opened for the first time
         public string day; //getting the day of the week from the calendar selection
         public string date; //getting the date of the week from the calendar selection
         public Form2()
@@ -21,7 +23,6 @@ namespace BTFFCPartyScheduler
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            //Application.ApplicationExit += new EventHandler(Application_ApplicationExit); //for later, maybe use this to confirm if the user wants to save before they exit the form
             U1Taken.Visible = false;
             U2Taken.Visible = false;
             U3Taken.Visible = false;
@@ -49,6 +50,7 @@ namespace BTFFCPartyScheduler
             label21.Text = day;
             label22.Text = date;
             timer1.Start();
+            timer2.Start();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -442,12 +444,253 @@ namespace BTFFCPartyScheduler
             {
                 R2Taken.Visible = false;
             }
-        }          
+        }
 
-        //private void Application_ApplicationExit(object sender, EventArgs e)
-        //{
-        //   // Properties.Settings.Default //test code for later
-        //}
+        static void lineRewriter(string newText, string fileName, int line_to_edit) //using this function to write to a specific line in the text file
+        {
+            string[] arrLine = File.ReadAllLines(fileName);
+            arrLine[line_to_edit - 1] = newText;
+            File.WriteAllLines(fileName, arrLine);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            string finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
+            string filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to
+            for (int i = 0; i < 25; i++)
+            {
+                File.AppendAllText(filePath, Environment.NewLine); //add the lines to the textfile so that the array index is not out of range
+            }
+            //save to the text files here, naming the text files based on the date selected, seperating each text box by a new line
+
+            if (File.Exists(filePath))   // if exists then read from the file and put into the textboxes
+            {
+                if (getInitialData == true) //if this is true then this form needs to read from the text file to get the textbox data
+                {
+                    string GetLine(string fileName, int line)
+                    {
+                        using (var sr = new StreamReader(fileName))
+                        {
+                            for (int i = 1; i < line; i++)
+                                sr.ReadLine();
+                            return sr.ReadLine();
+                        }
+                    }
+
+                    richTextBox1.Text = GetLine(filePath, 1);
+                    richTextBox2.Text = GetLine(filePath, 2);
+                    richTextBox3.Text = GetLine(filePath, 3);
+                    richTextBox4.Text = GetLine(filePath, 4);
+                    richTextBox5.Text = GetLine(filePath, 5);
+                    richTextBox6.Text = GetLine(filePath, 6);
+                    richTextBox7.Text = GetLine(filePath, 7);
+                    richTextBox8.Text = GetLine(filePath, 8);
+                    richTextBox9.Text = GetLine(filePath, 9);
+                    richTextBox10.Text = GetLine(filePath, 10);
+                    richTextBox11.Text = GetLine(filePath, 11);
+                    richTextBox12.Text = GetLine(filePath, 12);
+                    richTextBox13.Text = GetLine(filePath, 13);
+                    richTextBox14.Text = GetLine(filePath, 14);
+                    richTextBox15.Text = GetLine(filePath, 15);
+                    richTextBox16.Text = GetLine(filePath, 16);
+                    richTextBox17.Text = GetLine(filePath, 17);
+                    richTextBox18.Text = GetLine(filePath, 18);
+                    richTextBox19.Text = GetLine(filePath, 19);
+                    richTextBox20.Text = GetLine(filePath, 20);
+                    getInitialData = false;
+                }
+
+                lineRewriter(richTextBox1.Text, filePath, 1);
+                lineRewriter(richTextBox2.Text, filePath, 2);
+                lineRewriter(richTextBox3.Text, filePath, 3);
+                lineRewriter(richTextBox4.Text, filePath, 4);
+                lineRewriter(richTextBox5.Text, filePath, 5);
+                lineRewriter(richTextBox6.Text, filePath, 6);
+                lineRewriter(richTextBox7.Text, filePath, 7);
+                lineRewriter(richTextBox8.Text, filePath, 8);
+                lineRewriter(richTextBox9.Text, filePath, 9);
+                lineRewriter(richTextBox10.Text, filePath, 10);
+                lineRewriter(richTextBox11.Text, filePath, 11);
+                lineRewriter(richTextBox12.Text, filePath, 12);
+                lineRewriter(richTextBox13.Text, filePath, 13);
+                lineRewriter(richTextBox14.Text, filePath, 14);
+                lineRewriter(richTextBox15.Text, filePath, 15);
+                lineRewriter(richTextBox16.Text, filePath, 16);
+                lineRewriter(richTextBox17.Text, filePath, 17);
+                lineRewriter(richTextBox18.Text, filePath, 18);
+                lineRewriter(richTextBox19.Text, filePath, 19);
+                lineRewriter(richTextBox20.Text, filePath, 20);
+            }
+            else
+            {
+                StreamWriter write = new StreamWriter(filePath); //this creates the new file if it doesn't already exist, requires admin permission to write to this folder -> need to run program as administrator
+                write.Close();
+            }
+        }
+
+        //this section of code below is to make the user unable to use the enter key on any of the text boxes.
+        //the enter key interferes with how I read the information from the text files since I treat each new line in the text file as a new text box on the form
+        // pressing the enter key would mess that up and cut off any text after the enter key was pressed
+
+        private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox5_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox6_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox7_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox8_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox9_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox10_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox11_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox12_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox13_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox14_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox15_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox16_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox17_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox18_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox19_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void richTextBox20_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }
 
