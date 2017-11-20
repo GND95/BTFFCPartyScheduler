@@ -18,6 +18,9 @@ namespace BTFFCPartyScheduler
         bool getInitialData = true; //use this to pull the information from the text files when this form is opened for the first time
         public string day; //getting the day of the week from the calendar selection
         public string date; //getting the date of the week from the calendar selection
+        public string finalDate; //used for getting the date
+        public string filePath; //used for getting setting the file path
+
         public Form2()
         {
             InitializeComponent();
@@ -442,25 +445,22 @@ namespace BTFFCPartyScheduler
             }
             if (box20HasText == true)
             {
-                R2Taken.Visible = false;
+                R2Taken.Visible = false;                
             }
         }
-
+       
         static void lineRewriter(string newText, string fileName, int line_to_edit) //using this function to write to a specific line in the text file
         {
             string[] arrLine = File.ReadAllLines(fileName);
             arrLine[line_to_edit - 1] = newText;
-            File.WriteAllLines(fileName, arrLine);
+            File.WriteAllLines(fileName, arrLine);          
         }
-
+        
         private void timer2_Tick(object sender, EventArgs e)
         {
-            string finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
-            string filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to
-            for (int i = 0; i < 25; i++)
-            {
-                File.AppendAllText(filePath, Environment.NewLine); //add the lines to the textfile so that the array index is not out of range
-            }
+             finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
+             filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to            
+           
             //save to the text files here, naming the text files based on the date selected, seperating each text box by a new line
 
             if (File.Exists(filePath))   // if exists then read from the file and put into the textboxes
@@ -525,6 +525,10 @@ namespace BTFFCPartyScheduler
             {
                 StreamWriter write = new StreamWriter(filePath); //this creates the new file if it doesn't already exist, requires admin permission to write to this folder -> need to run program as administrator
                 write.Close();
+                for (int i = 0; i < 25; i++)
+                {
+                    File.AppendAllText(filePath, Environment.NewLine); //add the lines to the textfile so that the array index is not out of range
+                }
             }
         }
 
