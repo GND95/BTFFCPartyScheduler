@@ -540,7 +540,8 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
-                e.SuppressKeyPress = true;
+                SendKeys.Send("                                                            "); // Users can't press enter because new lines are how I separate the next text box from the previous text box when reading from the text files that I use to save this program in. With this code, I use the enter key to enter a lot of spaces that take them to the next line in the application's text box and not interfere with my previous code to distinguish between the text boxes.
+                e.SuppressKeyPress = true;                
             }
         }
 
@@ -548,6 +549,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -556,6 +558,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -564,6 +567,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -572,6 +576,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -580,6 +585,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -588,6 +594,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -596,6 +603,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -604,6 +612,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -612,6 +621,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -620,6 +630,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -628,6 +639,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -636,6 +648,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -644,6 +657,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -652,6 +666,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -660,6 +675,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -668,6 +684,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -676,6 +693,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -684,6 +702,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
@@ -692,6 +711,7 @@ namespace BTFFCPartyScheduler
         {
             if (e.KeyData == Keys.Enter)
             {
+                SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
             }
         }
