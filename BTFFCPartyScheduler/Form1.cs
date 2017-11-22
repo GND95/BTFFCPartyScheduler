@@ -47,7 +47,7 @@ namespace BTFFCPartyScheduler
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Program written, coded, designed, and created entirely by Garrett DeBlois; November 2017", "Info");
+            MessageBox.Show("Version 1.0 (Created November 2017). Program written, coded, designed, and created entirely by Garrett DeBlois, B.S., Computer Science.", "Info");
         }
     }
 }

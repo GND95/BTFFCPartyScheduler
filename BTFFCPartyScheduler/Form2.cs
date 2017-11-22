@@ -19,7 +19,47 @@ namespace BTFFCPartyScheduler
         public string day; //getting the day of the week from the calendar selection
         public string date; //getting the date of the week from the calendar selection
         public string finalDate; //used for getting the date
-        public string filePath; //used for getting setting the file path
+        public string filePath; //used for getting setting the file path       
+        public string lastName1; // used for printing the peron's last name from textbox1     
+        public string lastName2;
+        public string lastName3;
+        public string lastName4;
+        public string lastName5;
+        public string lastName6;
+        public string lastName7;
+        public string lastName8;
+        public string lastName9;
+        public string lastName10;
+        public string lastName11;
+        public string lastName12;
+        public string lastName13;
+        public string lastName14;
+        public string lastName15;
+        public string lastName16;
+        public string lastName17;
+        public string lastName18;
+        public string lastName19;
+        public string lastName20;
+        List<string> nameSplit1 = new List<string>();//used for printing
+        List<string> nameSplit2 = new List<string>();
+        List<string> nameSplit3 = new List<string>();
+        List<string> nameSplit4 = new List<string>();
+        List<string> nameSplit5 = new List<string>();
+        List<string> nameSplit6 = new List<string>();
+        List<string> nameSplit7 = new List<string>();
+        List<string> nameSplit8 = new List<string>();
+        List<string> nameSplit9 = new List<string>();
+        List<string> nameSplit10 = new List<string>();
+        List<string> nameSplit11 = new List<string>();
+        List<string> nameSplit12 = new List<string>();
+        List<string> nameSplit13 = new List<string>();
+        List<string> nameSplit14 = new List<string>();
+        List<string> nameSplit15 = new List<string>();
+        List<string> nameSplit16 = new List<string>();
+        List<string> nameSplit17 = new List<string>();
+        List<string> nameSplit18 = new List<string>();
+        List<string> nameSplit19 = new List<string>();
+        List<string> nameSplit20 = new List<string>();
 
         public Form2()
         {
@@ -445,22 +485,22 @@ namespace BTFFCPartyScheduler
             }
             if (box20HasText == true)
             {
-                R2Taken.Visible = false;                
+                R2Taken.Visible = false;
             }
         }
-       
+
         static void lineRewriter(string newText, string fileName, int line_to_edit) //using this function to write to a specific line in the text file
         {
             string[] arrLine = File.ReadAllLines(fileName);
             arrLine[line_to_edit - 1] = newText;
-            File.WriteAllLines(fileName, arrLine);          
+            File.WriteAllLines(fileName, arrLine);
         }
-        
+
         private void timer2_Tick(object sender, EventArgs e)
         {
-             finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
-             filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to            
-           
+            finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
+            filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to            
+
             //save to the text files here, naming the text files based on the date selected, seperating each text box by a new line
 
             if (File.Exists(filePath))   // if exists then read from the file and put into the textboxes
@@ -541,7 +581,7 @@ namespace BTFFCPartyScheduler
             if (e.KeyData == Keys.Enter)
             {
                 SendKeys.Send("                                                            "); // Users can't press enter because new lines are how I separate the next text box from the previous text box when reading from the text files that I use to save this program in. With this code, I use the enter key to enter a lot of spaces that take them to the next line in the application's text box and not interfere with my previous code to distinguish between the text boxes.
-                e.SuppressKeyPress = true;                
+                e.SuppressKeyPress = true;
             }
         }
 
@@ -713,6 +753,850 @@ namespace BTFFCPartyScheduler
             {
                 SendKeys.Send("                                                            ");
                 e.SuppressKeyPress = true;
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bmp, e.MarginBounds);
+        }
+
+        Bitmap bmp;
+
+        private void button1_Click(object sender, EventArgs e) //code for print this page button
+        {
+            printDocument1.DefaultPageSettings.Landscape = true; ; //changing the picture to print in landscape
+            Graphics g = this.CreateGraphics();
+            bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
+            Graphics mg = Graphics.FromImage(bmp);
+            mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e) //preview party table button
+        {
+            bool box1HasText = string.IsNullOrWhiteSpace(richTextBox1.Text); //if it has text, then false
+            if (box1HasText == false)
+            {
+                try //see if there is a last name
+                {
+                    nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
+                    lastName1 = nameSplit1[1];
+                    printPreviewDialog2.Document = printDocument2;
+                    if (printPreviewDialog2.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument2.Print();
+                    }
+                }
+                catch //if there is no last name, throw this error
+                {
+                    MessageBox.Show("Please enter a last name into box U1", "Error");
+                }
+            }
+            bool box2HasText = string.IsNullOrWhiteSpace(richTextBox2.Text); //if it has text, then false
+            if (box2HasText == false)
+            {
+                try
+                {
+                    nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
+                    lastName2 = nameSplit2[1];
+                    printPreviewDialog3.Document = printDocument3;
+                    if (printPreviewDialog3.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument3.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U2", "Error");
+                }
+            }
+            bool box3HasText = string.IsNullOrWhiteSpace(richTextBox3.Text); //if it has text, then false
+            if (box3HasText == false)
+            {
+                try
+                {
+                    nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
+                    lastName3 = nameSplit3[1];
+                    printPreviewDialog4.Document = printDocument4;
+                    if (printPreviewDialog4.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument4.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U3", "Error");
+                }
+            }
+            bool box4HasText = string.IsNullOrWhiteSpace(richTextBox4.Text); //if it has text, then false
+            if (box4HasText == false)
+            {
+                try
+                {
+                    nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
+                    lastName4 = nameSplit4[1];
+                    printPreviewDialog5.Document = printDocument5;
+                    if (printPreviewDialog5.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument5.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U4", "Error");
+                }
+            }
+            bool box5HasText = string.IsNullOrWhiteSpace(richTextBox5.Text); //if it has text, then false
+            if (box5HasText == false)
+            {
+                try
+                {
+                    nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
+                    lastName5 = nameSplit5[1];
+                    printPreviewDialog6.Document = printDocument6;
+                    if (printPreviewDialog6.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument6.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U5", "Error");
+                }
+            }
+            bool box6HasText = string.IsNullOrWhiteSpace(richTextBox6.Text); //if it has text, then false
+            if (box6HasText == false)
+            {
+                try
+                {
+                    nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
+                    lastName6 = nameSplit6[1];
+                    printPreviewDialog7.Document = printDocument7;
+                    if (printPreviewDialog7.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument7.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U6", "Error");
+                }
+            }
+            bool box7HasText = string.IsNullOrWhiteSpace(richTextBox7.Text); //if it has text, then false
+            if (box7HasText == false)
+            {
+                try
+                {
+                    nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
+                    lastName7 = nameSplit7[1];
+                    printPreviewDialog8.Document = printDocument8;
+                    if (printPreviewDialog8.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument8.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U7", "Error");
+                }
+            }
+            bool box8HasText = string.IsNullOrWhiteSpace(richTextBox8.Text); //if it has text, then false
+            if (box8HasText == false)
+            {
+                try
+                {
+                    nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
+                    lastName8 = nameSplit8[1];
+                    printPreviewDialog9.Document = printDocument9;
+                    if (printPreviewDialog9.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument9.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U8", "Error");
+                }
+            }
+            bool box9HasText = string.IsNullOrWhiteSpace(richTextBox9.Text); //if it has text, then false
+            if (box9HasText == false)
+            {
+                try
+                {
+                    nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
+                    lastName9 = nameSplit9[1];
+                    printPreviewDialog10.Document = printDocument10;
+                    if (printPreviewDialog10.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument10.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U9", "Error");
+                }
+            }
+            bool box10HasText = string.IsNullOrWhiteSpace(richTextBox10.Text); //if it has text, then false
+            if (box10HasText == false)
+            {
+                try
+                {
+                    nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
+                    lastName10 = nameSplit10[1];
+                    printPreviewDialog11.Document = printDocument11;
+                    if (printPreviewDialog11.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument11.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U10", "Error");
+                }
+            }
+            bool box11HasText = string.IsNullOrWhiteSpace(richTextBox11.Text); //if it has text, then false
+            if (box11HasText == false)
+            {
+                try
+                {
+                    nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
+                    lastName11 = nameSplit11[1];
+                    printPreviewDialog12.Document = printDocument12;
+                    if (printPreviewDialog12.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument12.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U11", "Error");
+                }
+            }
+            bool box12HasText = string.IsNullOrWhiteSpace(richTextBox12.Text); //if it has text, then false
+            if (box12HasText == false)
+            {
+                try
+                {
+                    nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
+                    lastName12 = nameSplit12[1];
+                    printPreviewDialog13.Document = printDocument13;
+                    if (printPreviewDialog13.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument13.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U12", "Error");
+                }
+            }
+            bool box13HasText = string.IsNullOrWhiteSpace(richTextBox13.Text); //if it has text, then false
+            if (box13HasText == false)
+            {
+                try
+                {
+                    nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
+                    lastName13 = nameSplit13[1];
+                    printPreviewDialog14.Document = printDocument14;
+                    if (printPreviewDialog14.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument14.Print();//the next few pages will need to print twice
+                        printDocument14.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G1", "Error");
+                }
+            }
+            bool box14HasText = string.IsNullOrWhiteSpace(richTextBox14.Text); //if it has text, then false
+            if (box14HasText == false)
+            {
+                try
+                {
+                    nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
+                    lastName14 = nameSplit14[1];
+                    printPreviewDialog15.Document = printDocument15;
+                    if (printPreviewDialog15.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument15.Print();
+                        printDocument15.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G2", "Error");
+                }
+            }
+            bool box15HasText = string.IsNullOrWhiteSpace(richTextBox15.Text); //if it has text, then false
+            if (box15HasText == false)
+            {
+                try
+                {
+                    nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
+                    lastName15 = nameSplit15[1];
+                    printPreviewDialog16.Document = printDocument16;
+                    if (printPreviewDialog16.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument16.Print();
+                        printDocument16.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G3", "Error");
+                }
+            }
+            bool box16HasText = string.IsNullOrWhiteSpace(richTextBox16.Text); //if it has text, then false
+            if (box16HasText == false)
+            {
+                try
+                {
+                    nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
+                    lastName16 = nameSplit16[1];
+                    printPreviewDialog17.Document = printDocument17;
+                    if (printPreviewDialog17.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument17.Print();
+                        printDocument17.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G4", "Error");
+                }
+            }
+            bool box17HasText = string.IsNullOrWhiteSpace(richTextBox17.Text); //if it has text, then false
+            if (box17HasText == false)
+            {
+                try
+                {
+                    nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
+                    lastName17 = nameSplit17[1];
+                    printPreviewDialog18.Document = printDocument18;
+                    if (printPreviewDialog18.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument18.Print();
+                        printDocument18.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G5", "Error");
+                }
+            }
+            bool box18HasText = string.IsNullOrWhiteSpace(richTextBox18.Text); //if it has text, then false
+            if (box18HasText == false)
+            {
+                try
+                {
+                    nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
+                    lastName18 = nameSplit18[1];
+                    printPreviewDialog19.Document = printDocument19;
+                    if (printPreviewDialog19.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument19.Print();
+                        printDocument19.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G6", "Error");
+                }
+            }
+            bool box19HasText = string.IsNullOrWhiteSpace(richTextBox19.Text); //if it has text, then false
+            if (box19HasText == false)
+            {
+                try
+                {
+                    nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
+                    lastName19 = nameSplit19[1];
+                    printPreviewDialog20.Document = printDocument20;
+                    if (printPreviewDialog20.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument20.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box R1", "Error");
+                }
+            }
+            bool box20HasText = string.IsNullOrWhiteSpace(richTextBox20.Text); //if it has text, then false
+            if (box20HasText == false)
+            {
+                try
+                {
+                    nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
+                    lastName20 = nameSplit20[1];
+                    printPreviewDialog21.Document = printDocument21;
+                    if (printPreviewDialog21.ShowDialog() == DialogResult.OK)
+                    {
+                        printDocument21.Print();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box R2", "Error");
+                }
+            }
+        }
+
+        private void printDocument2_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName1, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument3_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName2, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument4_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName3, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument5_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName4, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument6_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName5, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument7_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName6, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument8_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName7, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument9_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName8, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument10_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName9, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument11_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName10, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument12_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName11, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument13_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName12, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument14_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName13, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument15_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+          //  e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName14, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument16_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName15, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument17_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName16, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument18_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            //e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName17, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument19_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            //e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName18, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument20_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName19, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void printDocument21_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
+            e.Graphics.DrawString(lastName20, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
+            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+        }
+
+        private void button3_Click(object sender, EventArgs e) //print all party table papers button
+        {
+            bool box1HasText = string.IsNullOrWhiteSpace(richTextBox1.Text); //if it has text, then false
+            if (box1HasText == false)
+            {
+                try //see if there is a last name
+                {
+                    nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
+                    lastName1 = nameSplit1[1];
+                    printPreviewDialog2.Document = printDocument2;
+                    printDocument2.Print();
+
+                }
+                catch //if there is no last name, throw this error
+                {
+                    MessageBox.Show("Please enter a last name into box U1", "Error");
+                }
+            }
+            bool box2HasText = string.IsNullOrWhiteSpace(richTextBox2.Text); //if it has text, then false
+            if (box2HasText == false)
+            {
+                try
+                {
+                    nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
+                    lastName2 = nameSplit2[1];
+                    printPreviewDialog3.Document = printDocument3;
+                    printDocument3.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U2", "Error");
+                }
+            }
+            bool box3HasText = string.IsNullOrWhiteSpace(richTextBox3.Text); //if it has text, then false
+            if (box3HasText == false)
+            {
+                try
+                {
+                    nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
+                    lastName3 = nameSplit3[1];
+                    printPreviewDialog4.Document = printDocument4;
+                    printDocument4.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U3", "Error");
+                }
+            }
+            bool box4HasText = string.IsNullOrWhiteSpace(richTextBox4.Text); //if it has text, then false
+            if (box4HasText == false)
+            {
+                try
+                {
+                    nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
+                    lastName4 = nameSplit4[1];
+                    printPreviewDialog5.Document = printDocument5;
+                    printDocument5.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U4", "Error");
+                }
+            }
+            bool box5HasText = string.IsNullOrWhiteSpace(richTextBox5.Text); //if it has text, then false
+            if (box5HasText == false)
+            {
+                try
+                {
+                    nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
+                    lastName5 = nameSplit5[1];
+                    printPreviewDialog6.Document = printDocument6;
+                    printDocument6.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U5", "Error");
+                }
+            }
+            bool box6HasText = string.IsNullOrWhiteSpace(richTextBox6.Text); //if it has text, then false
+            if (box6HasText == false)
+            {
+                try
+                {
+                    nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
+                    lastName6 = nameSplit6[1];
+                    printPreviewDialog7.Document = printDocument7;
+                    printDocument7.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U6", "Error");
+                }
+            }
+            bool box7HasText = string.IsNullOrWhiteSpace(richTextBox7.Text); //if it has text, then false
+            if (box7HasText == false)
+            {
+                try
+                {
+                    nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
+                    lastName7 = nameSplit7[1];
+                    printPreviewDialog8.Document = printDocument8;
+                    printDocument8.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U7", "Error");
+                }
+            }
+            bool box8HasText = string.IsNullOrWhiteSpace(richTextBox8.Text); //if it has text, then false
+            if (box8HasText == false)
+            {
+                try
+                {
+                    nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
+                    lastName8 = nameSplit8[1];
+                    printPreviewDialog9.Document = printDocument9;
+                    printDocument9.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U8", "Error");
+                }
+            }
+            bool box9HasText = string.IsNullOrWhiteSpace(richTextBox9.Text); //if it has text, then false
+            if (box9HasText == false)
+            {
+                try
+                {
+                    nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
+                    lastName9 = nameSplit9[1];
+                    printPreviewDialog10.Document = printDocument10;
+                    printDocument10.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U9", "Error");
+                }
+            }
+            bool box10HasText = string.IsNullOrWhiteSpace(richTextBox10.Text); //if it has text, then false
+            if (box10HasText == false)
+            {
+                try
+                {
+                    nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
+                    lastName10 = nameSplit10[1];
+                    printPreviewDialog11.Document = printDocument11;
+                    printDocument11.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U10", "Error");
+                }
+            }
+            bool box11HasText = string.IsNullOrWhiteSpace(richTextBox11.Text); //if it has text, then false
+            if (box11HasText == false)
+            {
+                try
+                {
+                    nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
+                    lastName11 = nameSplit11[1];
+                    printPreviewDialog12.Document = printDocument12;
+                    printDocument12.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U11", "Error");
+                }
+            }
+            bool box12HasText = string.IsNullOrWhiteSpace(richTextBox12.Text); //if it has text, then false
+            if (box12HasText == false)
+            {
+                try
+                {
+                    nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
+                    lastName12 = nameSplit12[1];
+                    printPreviewDialog13.Document = printDocument13;
+                    printDocument13.Print();                    
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box U12", "Error");
+                }
+            }
+            bool box13HasText = string.IsNullOrWhiteSpace(richTextBox13.Text); //if it has text, then false
+            if (box13HasText == false)
+            {
+                try
+                {
+                    nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
+                    lastName13 = nameSplit13[1];
+                    printPreviewDialog14.Document = printDocument14;
+                    printDocument14.Print();
+                    printDocument14.Print();//the next few pages will need to print twice
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G1", "Error");
+                }
+            }
+            bool box14HasText = string.IsNullOrWhiteSpace(richTextBox14.Text); //if it has text, then false
+            if (box14HasText == false)
+            {
+                try
+                {
+                    nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
+                    lastName14 = nameSplit14[1];
+                    printPreviewDialog15.Document = printDocument15;
+                    printDocument15.Print();
+                    printDocument15.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G2", "Error");
+                }
+            }
+            bool box15HasText = string.IsNullOrWhiteSpace(richTextBox15.Text); //if it has text, then false
+            if (box15HasText == false)
+            {
+                try
+                {
+                    nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
+                    lastName15 = nameSplit15[1];
+                    printPreviewDialog16.Document = printDocument16;
+                    printDocument16.Print();
+                    printDocument16.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G3", "Error");
+                }
+            }
+            bool box16HasText = string.IsNullOrWhiteSpace(richTextBox16.Text); //if it has text, then false
+            if (box16HasText == false)
+            {
+                try
+                {
+                    nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
+                    lastName16 = nameSplit16[1];
+                    printPreviewDialog17.Document = printDocument17;
+                    printDocument17.Print();
+                    printDocument17.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G4", "Error");
+                }
+            }
+            bool box17HasText = string.IsNullOrWhiteSpace(richTextBox17.Text); //if it has text, then false
+            if (box17HasText == false)
+            {
+                try
+                {
+                    nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
+                    lastName17 = nameSplit17[1];
+                    printPreviewDialog18.Document = printDocument18;
+                    printDocument18.Print();
+                    printDocument18.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G5", "Error");
+                }
+            }
+            bool box18HasText = string.IsNullOrWhiteSpace(richTextBox18.Text); //if it has text, then false
+            if (box18HasText == false)
+            {
+                try
+                {
+                    nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
+                    lastName18 = nameSplit18[1];
+                    printPreviewDialog19.Document = printDocument19;
+                    printDocument19.Print();
+                    printDocument19.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box G6", "Error");
+                }
+            }
+            bool box19HasText = string.IsNullOrWhiteSpace(richTextBox19.Text); //if it has text, then false
+            if (box19HasText == false)
+            {
+                try
+                {
+                    nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
+                    lastName19 = nameSplit19[1];
+                    printPreviewDialog20.Document = printDocument20;
+                    printDocument20.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box R1", "Error");
+                }
+            }
+            bool box20HasText = string.IsNullOrWhiteSpace(richTextBox20.Text); //if it has text, then false
+            if (box20HasText == false)
+            {
+                try
+                {
+                    nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
+                    lastName20 = nameSplit20[1];
+                    printPreviewDialog21.Document = printDocument21;
+                    printDocument21.Print();
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter a last name into box R2", "Error");
+                }
             }
         }
     }

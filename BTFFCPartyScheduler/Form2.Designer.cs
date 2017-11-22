@@ -112,6 +112,52 @@
             this.R1Taken = new System.Windows.Forms.PictureBox();
             this.R2Taken = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.printDocument2 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog2 = new System.Windows.Forms.PrintPreviewDialog();
+            this.button3 = new System.Windows.Forms.Button();
+            this.printPreviewDialog3 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument3 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog4 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument4 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog5 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog6 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog7 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog8 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog9 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog10 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog11 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog12 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog13 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog14 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog15 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog16 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog17 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog18 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog19 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog20 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printPreviewDialog21 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument5 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument6 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument7 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument8 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument9 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument10 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument11 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument12 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument13 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument14 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument15 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument16 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument17 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument18 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument19 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument20 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument21 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.U3Taken)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.U4Taken)).BeginInit();
@@ -158,7 +204,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label1.Location = new System.Drawing.Point(83, 426);
+            this.label1.Location = new System.Drawing.Point(83, 427);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 26);
             this.label1.TabIndex = 0;
@@ -178,7 +224,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label2.Location = new System.Drawing.Point(302, 426);
+            this.label2.Location = new System.Drawing.Point(302, 427);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 26);
             this.label2.TabIndex = 0;
@@ -198,7 +244,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label3.Location = new System.Drawing.Point(525, 426);
+            this.label3.Location = new System.Drawing.Point(525, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 26);
             this.label3.TabIndex = 0;
@@ -218,7 +264,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label4.Location = new System.Drawing.Point(745, 426);
+            this.label4.Location = new System.Drawing.Point(745, 427);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 26);
             this.label4.TabIndex = 0;
@@ -237,7 +283,7 @@
             // richTextBox6
             // 
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.richTextBox6.Location = new System.Drawing.Point(0, 531);
+            this.richTextBox6.Location = new System.Drawing.Point(0, 537);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(203, 54);
             this.richTextBox6.TabIndex = 6;
@@ -268,7 +314,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label5.Location = new System.Drawing.Point(969, 429);
+            this.label5.Location = new System.Drawing.Point(969, 428);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 26);
             this.label5.TabIndex = 0;
@@ -278,7 +324,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label6.Location = new System.Drawing.Point(80, 505);
+            this.label6.Location = new System.Drawing.Point(80, 509);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 26);
             this.label6.TabIndex = 0;
@@ -288,7 +334,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label7.Location = new System.Drawing.Point(303, 511);
+            this.label7.Location = new System.Drawing.Point(303, 510);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 26);
             this.label7.TabIndex = 0;
@@ -298,7 +344,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label8.Location = new System.Drawing.Point(524, 511);
+            this.label8.Location = new System.Drawing.Point(524, 510);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 26);
             this.label8.TabIndex = 0;
@@ -327,7 +373,7 @@
             // richTextBox11
             // 
             this.richTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.richTextBox11.Location = new System.Drawing.Point(1, 617);
+            this.richTextBox11.Location = new System.Drawing.Point(0, 617);
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.Size = new System.Drawing.Size(203, 54);
             this.richTextBox11.TabIndex = 11;
@@ -337,7 +383,7 @@
             // richTextBox12
             // 
             this.richTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.richTextBox12.Location = new System.Drawing.Point(221, 620);
+            this.richTextBox12.Location = new System.Drawing.Point(221, 617);
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.Size = new System.Drawing.Size(203, 54);
             this.richTextBox12.TabIndex = 12;
@@ -348,7 +394,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label9.Location = new System.Drawing.Point(747, 508);
+            this.label9.Location = new System.Drawing.Point(747, 509);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 26);
             this.label9.TabIndex = 0;
@@ -368,7 +414,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label11.Location = new System.Drawing.Point(71, 589);
+            this.label11.Location = new System.Drawing.Point(71, 590);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 26);
             this.label11.TabIndex = 0;
@@ -378,7 +424,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label12.Location = new System.Drawing.Point(290, 591);
+            this.label12.Location = new System.Drawing.Point(290, 590);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 26);
             this.label12.TabIndex = 0;
@@ -387,7 +433,7 @@
             // richTextBox13
             // 
             this.richTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.richTextBox13.Location = new System.Drawing.Point(443, 615);
+            this.richTextBox13.Location = new System.Drawing.Point(443, 617);
             this.richTextBox13.Name = "richTextBox13";
             this.richTextBox13.Size = new System.Drawing.Size(203, 54);
             this.richTextBox13.TabIndex = 13;
@@ -428,7 +474,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label13.Location = new System.Drawing.Point(526, 586);
+            this.label13.Location = new System.Drawing.Point(526, 589);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 26);
             this.label13.TabIndex = 0;
@@ -438,7 +484,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label14.Location = new System.Drawing.Point(744, 589);
+            this.label14.Location = new System.Drawing.Point(744, 590);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(41, 26);
             this.label14.TabIndex = 0;
@@ -448,7 +494,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label15.Location = new System.Drawing.Point(967, 588);
+            this.label15.Location = new System.Drawing.Point(967, 590);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 26);
             this.label15.TabIndex = 0;
@@ -458,7 +504,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label16.Location = new System.Drawing.Point(80, 672);
+            this.label16.Location = new System.Drawing.Point(80, 673);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 26);
             this.label16.TabIndex = 0;
@@ -488,7 +534,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label17.Location = new System.Drawing.Point(302, 672);
+            this.label17.Location = new System.Drawing.Point(302, 673);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 26);
             this.label17.TabIndex = 0;
@@ -498,7 +544,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label18.Location = new System.Drawing.Point(524, 672);
+            this.label18.Location = new System.Drawing.Point(524, 673);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 26);
             this.label18.TabIndex = 0;
@@ -732,7 +778,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label19.Location = new System.Drawing.Point(726, 672);
+            this.label19.Location = new System.Drawing.Point(726, 673);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 26);
             this.label19.TabIndex = 0;
@@ -742,7 +788,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label20.Location = new System.Drawing.Point(947, 672);
+            this.label20.Location = new System.Drawing.Point(947, 673);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 26);
             this.label20.TabIndex = 0;
@@ -960,11 +1006,355 @@
             this.timer2.Enabled = true;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.button1.Location = new System.Drawing.Point(993, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 118);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Print This Page";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.textBox1.Location = new System.Drawing.Point(1, 0);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(115, 423);
+            this.textBox1.TabIndex = 43;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button2.Location = new System.Drawing.Point(993, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 126);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Preview Party Table Papers";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // printDocument2
+            // 
+            this.printDocument2.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument2_PrintPage);
+            // 
+            // printPreviewDialog2
+            // 
+            this.printPreviewDialog2.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog2.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog2.Enabled = true;
+            this.printPreviewDialog2.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog2.Icon")));
+            this.printPreviewDialog2.Name = "printPreviewDialog2";
+            this.printPreviewDialog2.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.button3.Location = new System.Drawing.Point(995, 152);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(94, 142);
+            this.button3.TabIndex = 45;
+            this.button3.Text = "Print All Party Table Papers";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // printPreviewDialog3
+            // 
+            this.printPreviewDialog3.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog3.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog3.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog3.Enabled = true;
+            this.printPreviewDialog3.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog3.Icon")));
+            this.printPreviewDialog3.Name = "printPreviewDialog3";
+            this.printPreviewDialog3.Visible = false;
+            // 
+            // printDocument3
+            // 
+            this.printDocument3.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument3_PrintPage);
+            // 
+            // printPreviewDialog4
+            // 
+            this.printPreviewDialog4.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog4.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog4.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog4.Enabled = true;
+            this.printPreviewDialog4.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog4.Icon")));
+            this.printPreviewDialog4.Name = "printPreviewDialog4";
+            this.printPreviewDialog4.Visible = false;
+            // 
+            // printDocument4
+            // 
+            this.printDocument4.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument4_PrintPage);
+            // 
+            // printPreviewDialog5
+            // 
+            this.printPreviewDialog5.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog5.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog5.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog5.Enabled = true;
+            this.printPreviewDialog5.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog5.Icon")));
+            this.printPreviewDialog5.Name = "printPreviewDialog5";
+            this.printPreviewDialog5.Visible = false;
+            // 
+            // printPreviewDialog6
+            // 
+            this.printPreviewDialog6.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog6.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog6.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog6.Enabled = true;
+            this.printPreviewDialog6.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog6.Icon")));
+            this.printPreviewDialog6.Name = "printPreviewDialog6";
+            this.printPreviewDialog6.Visible = false;
+            // 
+            // printPreviewDialog7
+            // 
+            this.printPreviewDialog7.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog7.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog7.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog7.Enabled = true;
+            this.printPreviewDialog7.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog7.Icon")));
+            this.printPreviewDialog7.Name = "printPreviewDialog7";
+            this.printPreviewDialog7.Visible = false;
+            // 
+            // printPreviewDialog8
+            // 
+            this.printPreviewDialog8.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog8.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog8.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog8.Enabled = true;
+            this.printPreviewDialog8.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog8.Icon")));
+            this.printPreviewDialog8.Name = "printPreviewDialog8";
+            this.printPreviewDialog8.Visible = false;
+            // 
+            // printPreviewDialog9
+            // 
+            this.printPreviewDialog9.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog9.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog9.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog9.Enabled = true;
+            this.printPreviewDialog9.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog9.Icon")));
+            this.printPreviewDialog9.Name = "printPreviewDialog9";
+            this.printPreviewDialog9.Visible = false;
+            // 
+            // printPreviewDialog10
+            // 
+            this.printPreviewDialog10.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog10.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog10.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog10.Enabled = true;
+            this.printPreviewDialog10.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog10.Icon")));
+            this.printPreviewDialog10.Name = "printPreviewDialog10";
+            this.printPreviewDialog10.Visible = false;
+            // 
+            // printPreviewDialog11
+            // 
+            this.printPreviewDialog11.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog11.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog11.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog11.Enabled = true;
+            this.printPreviewDialog11.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog11.Icon")));
+            this.printPreviewDialog11.Name = "printPreviewDialog11";
+            this.printPreviewDialog11.Visible = false;
+            // 
+            // printPreviewDialog12
+            // 
+            this.printPreviewDialog12.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog12.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog12.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog12.Enabled = true;
+            this.printPreviewDialog12.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog12.Icon")));
+            this.printPreviewDialog12.Name = "printPreviewDialog12";
+            this.printPreviewDialog12.Visible = false;
+            // 
+            // printPreviewDialog13
+            // 
+            this.printPreviewDialog13.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog13.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog13.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog13.Enabled = true;
+            this.printPreviewDialog13.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog13.Icon")));
+            this.printPreviewDialog13.Name = "printPreviewDialog13";
+            this.printPreviewDialog13.Visible = false;
+            // 
+            // printPreviewDialog14
+            // 
+            this.printPreviewDialog14.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog14.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog14.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog14.Enabled = true;
+            this.printPreviewDialog14.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog14.Icon")));
+            this.printPreviewDialog14.Name = "printPreviewDialog14";
+            this.printPreviewDialog14.Visible = false;
+            // 
+            // printPreviewDialog15
+            // 
+            this.printPreviewDialog15.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog15.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog15.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog15.Enabled = true;
+            this.printPreviewDialog15.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog15.Icon")));
+            this.printPreviewDialog15.Name = "printPreviewDialog15";
+            this.printPreviewDialog15.Visible = false;
+            // 
+            // printPreviewDialog16
+            // 
+            this.printPreviewDialog16.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog16.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog16.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog16.Enabled = true;
+            this.printPreviewDialog16.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog16.Icon")));
+            this.printPreviewDialog16.Name = "printPreviewDialog16";
+            this.printPreviewDialog16.Visible = false;
+            // 
+            // printPreviewDialog17
+            // 
+            this.printPreviewDialog17.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog17.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog17.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog17.Enabled = true;
+            this.printPreviewDialog17.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog17.Icon")));
+            this.printPreviewDialog17.Name = "printPreviewDialog17";
+            this.printPreviewDialog17.Visible = false;
+            // 
+            // printPreviewDialog18
+            // 
+            this.printPreviewDialog18.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog18.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog18.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog18.Enabled = true;
+            this.printPreviewDialog18.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog18.Icon")));
+            this.printPreviewDialog18.Name = "printPreviewDialog18";
+            this.printPreviewDialog18.Visible = false;
+            // 
+            // printPreviewDialog19
+            // 
+            this.printPreviewDialog19.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog19.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog19.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog19.Enabled = true;
+            this.printPreviewDialog19.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog19.Icon")));
+            this.printPreviewDialog19.Name = "printPreviewDialog19";
+            this.printPreviewDialog19.Visible = false;
+            // 
+            // printPreviewDialog20
+            // 
+            this.printPreviewDialog20.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog20.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog20.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog20.Enabled = true;
+            this.printPreviewDialog20.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog20.Icon")));
+            this.printPreviewDialog20.Name = "printPreviewDialog20";
+            this.printPreviewDialog20.Visible = false;
+            // 
+            // printPreviewDialog21
+            // 
+            this.printPreviewDialog21.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog21.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog21.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog21.Enabled = true;
+            this.printPreviewDialog21.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog21.Icon")));
+            this.printPreviewDialog21.Name = "printPreviewDialog21";
+            this.printPreviewDialog21.Visible = false;
+            // 
+            // printDocument5
+            // 
+            this.printDocument5.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument5_PrintPage);
+            // 
+            // printDocument6
+            // 
+            this.printDocument6.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument6_PrintPage);
+            // 
+            // printDocument7
+            // 
+            this.printDocument7.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument7_PrintPage);
+            // 
+            // printDocument8
+            // 
+            this.printDocument8.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument8_PrintPage);
+            // 
+            // printDocument9
+            // 
+            this.printDocument9.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument9_PrintPage);
+            // 
+            // printDocument10
+            // 
+            this.printDocument10.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument10_PrintPage);
+            // 
+            // printDocument11
+            // 
+            this.printDocument11.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument11_PrintPage);
+            // 
+            // printDocument12
+            // 
+            this.printDocument12.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument12_PrintPage);
+            // 
+            // printDocument13
+            // 
+            this.printDocument13.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument13_PrintPage);
+            // 
+            // printDocument14
+            // 
+            this.printDocument14.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument14_PrintPage);
+            // 
+            // printDocument15
+            // 
+            this.printDocument15.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument15_PrintPage);
+            // 
+            // printDocument16
+            // 
+            this.printDocument16.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument16_PrintPage);
+            // 
+            // printDocument17
+            // 
+            this.printDocument17.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument17_PrintPage);
+            // 
+            // printDocument18
+            // 
+            this.printDocument18.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument18_PrintPage);
+            // 
+            // printDocument19
+            // 
+            this.printDocument19.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument19_PrintPage);
+            // 
+            // printDocument20
+            // 
+            this.printDocument20.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument20_PrintPage);
+            // 
+            // printDocument21
+            // 
+            this.printDocument21.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument21_PrintPage);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 756);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1091, 854);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.R2Taken);
             this.Controls.Add(this.R1Taken);
             this.Controls.Add(this.G6Taken);
@@ -1158,5 +1548,51 @@
         private System.Windows.Forms.PictureBox R1Taken;
         private System.Windows.Forms.PictureBox R2Taken;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Drawing.Printing.PrintDocument printDocument2;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog3;
+        private System.Drawing.Printing.PrintDocument printDocument3;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog4;
+        private System.Drawing.Printing.PrintDocument printDocument4;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog5;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog6;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog7;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog8;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog9;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog10;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog11;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog12;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog13;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog14;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog15;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog16;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog17;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog18;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog19;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog20;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog21;
+        private System.Drawing.Printing.PrintDocument printDocument5;
+        private System.Drawing.Printing.PrintDocument printDocument6;
+        private System.Drawing.Printing.PrintDocument printDocument7;
+        private System.Drawing.Printing.PrintDocument printDocument8;
+        private System.Drawing.Printing.PrintDocument printDocument9;
+        private System.Drawing.Printing.PrintDocument printDocument10;
+        private System.Drawing.Printing.PrintDocument printDocument11;
+        private System.Drawing.Printing.PrintDocument printDocument12;
+        private System.Drawing.Printing.PrintDocument printDocument13;
+        private System.Drawing.Printing.PrintDocument printDocument14;
+        private System.Drawing.Printing.PrintDocument printDocument15;
+        private System.Drawing.Printing.PrintDocument printDocument16;
+        private System.Drawing.Printing.PrintDocument printDocument17;
+        private System.Drawing.Printing.PrintDocument printDocument18;
+        private System.Drawing.Printing.PrintDocument printDocument19;
+        private System.Drawing.Printing.PrintDocument printDocument20;
+        private System.Drawing.Printing.PrintDocument printDocument21;
     }
 }
