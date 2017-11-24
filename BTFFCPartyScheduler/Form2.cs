@@ -94,9 +94,70 @@ namespace BTFFCPartyScheduler
             label22.Text = date;
             timer1.Start();
             timer2.Start();
+            //these combo boxes are for the package type and for the time
+            comboBox1.Items.AddRange(new string[] { "A", "B" });
+            comboBox2.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox3.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox4.Items.AddRange(new string[] { "A", "B" });
+            comboBox5.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox6.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox7.Items.AddRange(new string[] { "A", "B" });
+            comboBox8.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox9.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox10.Items.AddRange(new string[] { "A", "B" });
+            comboBox11.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox12.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox13.Items.AddRange(new string[] { "A", "B" });
+            comboBox14.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox15.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox16.Items.AddRange(new string[] { "A", "B" });
+            comboBox17.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox18.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox19.Items.AddRange(new string[] { "A", "B" });
+            comboBox20.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox21.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox22.Items.AddRange(new string[] { "A", "B" });
+            comboBox23.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox24.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox25.Items.AddRange(new string[] { "A", "B" });
+            comboBox26.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox27.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox28.Items.AddRange(new string[] { "A", "B" });
+            comboBox29.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox30.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox31.Items.AddRange(new string[] { "A", "B" });
+            comboBox32.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox33.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox34.Items.AddRange(new string[] { "A", "B" });
+            comboBox35.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox36.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox37.Items.AddRange(new string[] { "A", "B" });
+            comboBox38.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox39.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox40.Items.AddRange(new string[] { "A", "B" });
+            comboBox41.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox42.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox43.Items.AddRange(new string[] { "A", "B" });
+            comboBox44.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox45.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox46.Items.AddRange(new string[] { "A", "B" });
+            comboBox47.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox48.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox49.Items.AddRange(new string[] { "A", "B" });
+            comboBox50.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox51.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox52.Items.AddRange(new string[] { "A", "B" });
+            comboBox53.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox54.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox55.Items.AddRange(new string[] { "A", "B" });
+            comboBox56.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox57.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox58.Items.AddRange(new string[] { "A", "B" });
+            comboBox59.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
+            comboBox60.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) //check boxes to copy text
         {
             if (richTextBox2.Text != richTextBox1.Text)
             {
@@ -105,6 +166,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox2.Text = "";
+            }
+            if (comboBox1.SelectedItem != comboBox4.SelectedItem) //to copy the package type
+            {
+                comboBox4.SelectedItem = comboBox1.SelectedItem;
+            }
+            else
+            {
+                comboBox4.SelectedItem = null;
+            }
+            if (comboBox2.SelectedItem != comboBox5.SelectedItem) //hour combobox
+            {
+                comboBox5.SelectedItem = comboBox2.SelectedItem;
+            }
+            else
+            {
+                comboBox5.SelectedItem = null;
+            }
+            if (comboBox3.SelectedItem != comboBox6.SelectedItem) //minute combobox
+            {
+                comboBox6.SelectedItem = comboBox3.SelectedItem;
+            }
+            else
+            {
+                comboBox6.SelectedItem = null;
             }
         }
 
@@ -118,6 +203,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox3.Text = "";
             }
+            if (comboBox4.SelectedItem != comboBox7.SelectedItem)
+            {
+                comboBox7.SelectedItem = comboBox4.SelectedItem;
+            }
+            else
+            {
+                comboBox7.SelectedItem = null;
+            }
+            if (comboBox5.SelectedItem != comboBox8.SelectedItem)
+            {
+                comboBox8.SelectedItem = comboBox5.SelectedItem;
+            }
+            else
+            {
+                comboBox8.SelectedItem = null;
+            }
+            if (comboBox6.SelectedItem != comboBox9.SelectedItem)
+            {
+                comboBox9.SelectedItem = comboBox6.SelectedItem;
+            }
+            else
+            {
+                comboBox9.SelectedItem = null;
+            }
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
@@ -129,6 +238,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox4.Text = "";
+            }
+            if (comboBox7.SelectedItem != comboBox10.SelectedItem)
+            {
+                comboBox10.SelectedItem = comboBox7.SelectedItem;
+            }
+            else
+            {
+                comboBox10.SelectedItem = null;
+            }
+            if (comboBox8.SelectedItem != comboBox11.SelectedItem)
+            {
+                comboBox11.SelectedItem = comboBox8.SelectedItem;
+            }
+            else
+            {
+                comboBox11.SelectedItem = null;
+            }
+            if (comboBox9.SelectedItem != comboBox12.SelectedItem)
+            {
+                comboBox12.SelectedItem = comboBox9.SelectedItem;
+            }
+            else
+            {
+                comboBox12.SelectedItem = null;
             }
         }
 
@@ -142,6 +275,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox5.Text = "";
             }
+            if (comboBox10.SelectedItem != comboBox13.SelectedItem)
+            {
+                comboBox13.SelectedItem = comboBox10.SelectedItem;
+            }
+            else
+            {
+                comboBox13.SelectedItem = null;
+            }
+            if (comboBox11.SelectedItem != comboBox14.SelectedItem)
+            {
+                comboBox14.SelectedItem = comboBox11.SelectedItem;
+            }
+            else
+            {
+                comboBox14.SelectedItem = null;
+            }
+            if (comboBox12.SelectedItem != comboBox15.SelectedItem)
+            {
+                comboBox15.SelectedItem = comboBox12.SelectedItem;
+            }
+            else
+            {
+                comboBox15.SelectedItem = null;
+            }
         }
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
@@ -153,6 +310,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox6.Text = "";
+            }
+            if (comboBox13.SelectedItem != comboBox16.SelectedItem)
+            {
+                comboBox16.SelectedItem = comboBox13.SelectedItem;
+            }
+            else
+            {
+                comboBox16.SelectedItem = null;
+            }
+            if (comboBox14.SelectedItem != comboBox17.SelectedItem)
+            {
+                comboBox17.SelectedItem = comboBox14.SelectedItem;
+            }
+            else
+            {
+                comboBox17.SelectedItem = null;
+            }
+            if (comboBox15.SelectedItem != comboBox18.SelectedItem)
+            {
+                comboBox18.SelectedItem = comboBox15.SelectedItem;
+            }
+            else
+            {
+                comboBox18.SelectedItem = null;
             }
         }
 
@@ -166,6 +347,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox7.Text = "";
             }
+            if (comboBox16.SelectedItem != comboBox19.SelectedItem)
+            {
+                comboBox19.SelectedItem = comboBox16.SelectedItem;
+            }
+            else
+            {
+                comboBox19.SelectedItem = null;
+            }
+            if (comboBox17.SelectedItem != comboBox20.SelectedItem)
+            {
+                comboBox20.SelectedItem = comboBox17.SelectedItem;
+            }
+            else
+            {
+                comboBox20.SelectedItem = null;
+            }
+            if (comboBox18.SelectedItem != comboBox21.SelectedItem)
+            {
+                comboBox21.SelectedItem = comboBox18.SelectedItem;
+            }
+            else
+            {
+                comboBox21.SelectedItem = null;
+            }
         }
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
@@ -177,6 +382,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox8.Text = "";
+            }
+            if (comboBox19.SelectedItem != comboBox22.SelectedItem)
+            {
+                comboBox22.SelectedItem = comboBox19.SelectedItem;
+            }
+            else
+            {
+                comboBox22.SelectedItem = null;
+            }
+            if (comboBox20.SelectedItem != comboBox23.SelectedItem)
+            {
+                comboBox23.SelectedItem = comboBox20.SelectedItem;
+            }
+            else
+            {
+                comboBox23.SelectedItem = null;
+            }
+            if (comboBox21.SelectedItem != comboBox24.SelectedItem)
+            {
+                comboBox24.SelectedItem = comboBox21.SelectedItem;
+            }
+            else
+            {
+                comboBox24.SelectedItem = null;
             }
         }
 
@@ -190,6 +419,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox9.Text = "";
             }
+            if (comboBox22.SelectedItem != comboBox25.SelectedItem)
+            {
+                comboBox25.SelectedItem = comboBox22.SelectedItem;
+            }
+            else
+            {
+                comboBox25.SelectedItem = null;
+            }
+            if (comboBox23.SelectedItem != comboBox26.SelectedItem)
+            {
+                comboBox26.SelectedItem = comboBox23.SelectedItem;
+            }
+            else
+            {
+                comboBox26.SelectedItem = null;
+            }
+            if (comboBox24.SelectedItem != comboBox27.SelectedItem)
+            {
+                comboBox27.SelectedItem = comboBox24.SelectedItem;
+            }
+            else
+            {
+                comboBox27.SelectedItem = null;
+            }
         }
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
@@ -201,6 +454,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox10.Text = "";
+            }
+            if (comboBox25.SelectedItem != comboBox28.SelectedItem)
+            {
+                comboBox28.SelectedItem = comboBox25.SelectedItem;
+            }
+            else
+            {
+                comboBox28.SelectedItem = null;
+            }
+            if (comboBox26.SelectedItem != comboBox29.SelectedItem)
+            {
+                comboBox29.SelectedItem = comboBox26.SelectedItem;
+            }
+            else
+            {
+                comboBox29.SelectedItem = null;
+            }
+            if (comboBox27.SelectedItem != comboBox30.SelectedItem)
+            {
+                comboBox30.SelectedItem = comboBox27.SelectedItem;
+            }
+            else
+            {
+                comboBox30.SelectedItem = null;
             }
         }
 
@@ -214,6 +491,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox11.Text = "";
             }
+            if (comboBox28.SelectedItem != comboBox31.SelectedItem)
+            {
+                comboBox31.SelectedItem = comboBox28.SelectedItem;
+            }
+            else
+            {
+                comboBox31.SelectedItem = null;
+            }
+            if (comboBox29.SelectedItem != comboBox32.SelectedItem)
+            {
+                comboBox32.SelectedItem = comboBox29.SelectedItem;
+            }
+            else
+            {
+                comboBox32.SelectedItem = null;
+            }
+            if (comboBox30.SelectedItem != comboBox33.SelectedItem)
+            {
+                comboBox33.SelectedItem = comboBox30.SelectedItem;
+            }
+            else
+            {
+                comboBox33.SelectedItem = null;
+            }
         }
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
@@ -225,6 +526,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox12.Text = "";
+            }
+            if (comboBox31.SelectedItem != comboBox34.SelectedItem)
+            {
+                comboBox34.SelectedItem = comboBox31.SelectedItem;
+            }
+            else
+            {
+                comboBox34.SelectedItem = null;
+            }
+            if (comboBox32.SelectedItem != comboBox35.SelectedItem)
+            {
+                comboBox35.SelectedItem = comboBox32.SelectedItem;
+            }
+            else
+            {
+                comboBox35.SelectedItem = null;
+            }
+            if (comboBox33.SelectedItem != comboBox36.SelectedItem)
+            {
+                comboBox36.SelectedItem = comboBox33.SelectedItem;
+            }
+            else
+            {
+                comboBox36.SelectedItem = null;
             }
         }
 
@@ -238,6 +563,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox13.Text = "";
             }
+            if (comboBox34.SelectedItem != comboBox37.SelectedItem)
+            {
+                comboBox37.SelectedItem = comboBox34.SelectedItem;
+            }
+            else
+            {
+                comboBox37.SelectedItem = null;
+            }
+            if (comboBox35.SelectedItem != comboBox38.SelectedItem)
+            {
+                comboBox38.SelectedItem = comboBox35.SelectedItem;
+            }
+            else
+            {
+                comboBox38.SelectedItem = null;
+            }
+            if (comboBox36.SelectedItem != comboBox39.SelectedItem)
+            {
+                comboBox39.SelectedItem = comboBox36.SelectedItem;
+            }
+            else
+            {
+                comboBox39.SelectedItem = null;
+            }
         }
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
@@ -249,6 +598,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox14.Text = "";
+            }
+            if (comboBox37.SelectedItem != comboBox40.SelectedItem)
+            {
+                comboBox40.SelectedItem = comboBox37.SelectedItem;
+            }
+            else
+            {
+                comboBox40.SelectedItem = null;
+            }
+            if (comboBox38.SelectedItem != comboBox41.SelectedItem)
+            {
+                comboBox41.SelectedItem = comboBox38.SelectedItem;
+            }
+            else
+            {
+                comboBox41.SelectedItem = null;
+            }
+            if (comboBox39.SelectedItem != comboBox42.SelectedItem)
+            {
+                comboBox42.SelectedItem = comboBox39.SelectedItem;
+            }
+            else
+            {
+                comboBox42.SelectedItem = null;
             }
         }
 
@@ -262,6 +635,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox15.Text = "";
             }
+            if (comboBox40.SelectedItem != comboBox43.SelectedItem)
+            {
+                comboBox43.SelectedItem = comboBox40.SelectedItem;
+            }
+            else
+            {
+                comboBox43.SelectedItem = null;
+            }
+            if (comboBox41.SelectedItem != comboBox44.SelectedItem)
+            {
+                comboBox44.SelectedItem = comboBox41.SelectedItem;
+            }
+            else
+            {
+                comboBox44.SelectedItem = null;
+            }
+            if (comboBox42.SelectedItem != comboBox45.SelectedItem)
+            {
+                comboBox45.SelectedItem = comboBox42.SelectedItem;
+            }
+            else
+            {
+                comboBox45.SelectedItem = null;
+            }
         }
 
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
@@ -273,6 +670,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox16.Text = "";
+            }
+            if (comboBox43.SelectedItem != comboBox46.SelectedItem)
+            {
+                comboBox46.SelectedItem = comboBox43.SelectedItem;
+            }
+            else
+            {
+                comboBox46.SelectedItem = null;
+            }
+            if (comboBox44.SelectedItem != comboBox47.SelectedItem)
+            {
+                comboBox47.SelectedItem = comboBox44.SelectedItem;
+            }
+            else
+            {
+                comboBox47.SelectedItem = null;
+            }
+            if (comboBox45.SelectedItem != comboBox48.SelectedItem)
+            {
+                comboBox48.SelectedItem = comboBox45.SelectedItem;
+            }
+            else
+            {
+                comboBox48.SelectedItem = null;
             }
         }
 
@@ -286,6 +707,30 @@ namespace BTFFCPartyScheduler
             {
                 richTextBox17.Text = "";
             }
+            if (comboBox46.SelectedItem != comboBox49.SelectedItem)
+            {
+                comboBox49.SelectedItem = comboBox46.SelectedItem;
+            }
+            else
+            {
+                comboBox49.SelectedItem = null;
+            }
+            if (comboBox47.SelectedItem != comboBox50.SelectedItem)
+            {
+                comboBox50.SelectedItem = comboBox47.SelectedItem;
+            }
+            else
+            {
+                comboBox50.SelectedItem = null;
+            }
+            if (comboBox48.SelectedItem != comboBox51.SelectedItem)
+            {
+                comboBox51.SelectedItem = comboBox48.SelectedItem;
+            }
+            else
+            {
+                comboBox51.SelectedItem = null;
+            }
         }
 
         private void checkBox17_CheckedChanged(object sender, EventArgs e)
@@ -297,6 +742,30 @@ namespace BTFFCPartyScheduler
             else
             {
                 richTextBox18.Text = "";
+            }
+            if (comboBox49.SelectedItem != comboBox58.SelectedItem)
+            {
+                comboBox58.SelectedItem = comboBox49.SelectedItem;
+            }
+            else
+            {
+                comboBox58.SelectedItem = null;
+            }
+            if (comboBox50.SelectedItem != comboBox59.SelectedItem)
+            {
+                comboBox59.SelectedItem = comboBox50.SelectedItem;
+            }
+            else
+            {
+                comboBox59.SelectedItem = null;
+            }
+            if (comboBox51.SelectedItem != comboBox60.SelectedItem)
+            {
+                comboBox60.SelectedItem = comboBox51.SelectedItem;
+            }
+            else
+            {
+                comboBox60.SelectedItem = null;
             }
         }
 
@@ -758,7 +1227,7 @@ namespace BTFFCPartyScheduler
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(bmp, e.MarginBounds);
+            e.Graphics.DrawImage(bmp, e.PageBounds);
         }
 
         Bitmap bmp;
@@ -770,6 +1239,8 @@ namespace BTFFCPartyScheduler
             bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
             Graphics mg = Graphics.FromImage(bmp);
             mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
+            ((Form)printPreviewDialog1).Text = "Form Print Preview " + date;
+            ((Form)printPreviewDialog1).WindowState = FormWindowState.Maximized; //maximize the print preview form
             printPreviewDialog1.ShowDialog();
         }
 
@@ -781,8 +1252,10 @@ namespace BTFFCPartyScheduler
                 try //see if there is a last name
                 {
                     nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
-                    lastName1 = nameSplit1[1];
+                    lastName1 = nameSplit1[1].ToUpper(); //takes last name and puts it in all caps                   
                     printPreviewDialog2.Document = printDocument2;
+                    ((Form)printPreviewDialog2).Text = "Table U1 Print Preview " + date; //change the title of the print preview form
+                    ((Form)printPreviewDialog2).WindowState = FormWindowState.Maximized; //maximize the print preview form
                     if (printPreviewDialog2.ShowDialog() == DialogResult.OK)
                     {
                         printDocument2.Print();
@@ -799,8 +1272,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
-                    lastName2 = nameSplit2[1];
+                    lastName2 = nameSplit2[1].ToUpper();
                     printPreviewDialog3.Document = printDocument3;
+                    ((Form)printPreviewDialog3).Text = "Table U2 Print Preview " + date;
+                    ((Form)printPreviewDialog3).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog3.ShowDialog() == DialogResult.OK)
                     {
                         printDocument3.Print();
@@ -817,8 +1292,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
-                    lastName3 = nameSplit3[1];
+                    lastName3 = nameSplit3[1].ToUpper();
                     printPreviewDialog4.Document = printDocument4;
+                    ((Form)printPreviewDialog4).Text = "Table U3 Print Preview " + date;
+                    ((Form)printPreviewDialog4).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog4.ShowDialog() == DialogResult.OK)
                     {
                         printDocument4.Print();
@@ -835,8 +1312,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
-                    lastName4 = nameSplit4[1];
+                    lastName4 = nameSplit4[1].ToUpper();
                     printPreviewDialog5.Document = printDocument5;
+                    ((Form)printPreviewDialog5).Text = "Table U4 Print Preview " + date;
+                    ((Form)printPreviewDialog5).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog5.ShowDialog() == DialogResult.OK)
                     {
                         printDocument5.Print();
@@ -853,8 +1332,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
-                    lastName5 = nameSplit5[1];
+                    lastName5 = nameSplit5[1].ToUpper();
                     printPreviewDialog6.Document = printDocument6;
+                    ((Form)printPreviewDialog6).Text = "Table U5 Print Preview " + date;
+                    ((Form)printPreviewDialog6).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog6.ShowDialog() == DialogResult.OK)
                     {
                         printDocument6.Print();
@@ -871,8 +1352,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
-                    lastName6 = nameSplit6[1];
+                    lastName6 = nameSplit6[1].ToUpper();
                     printPreviewDialog7.Document = printDocument7;
+                    ((Form)printPreviewDialog7).Text = "Table U6 Print Preview " + date;
+                    ((Form)printPreviewDialog7).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog7.ShowDialog() == DialogResult.OK)
                     {
                         printDocument7.Print();
@@ -889,8 +1372,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
-                    lastName7 = nameSplit7[1];
+                    lastName7 = nameSplit7[1].ToUpper();
                     printPreviewDialog8.Document = printDocument8;
+                    ((Form)printPreviewDialog8).Text = "Table U7 Print Preview " + date;
+                    ((Form)printPreviewDialog8).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog8.ShowDialog() == DialogResult.OK)
                     {
                         printDocument8.Print();
@@ -907,8 +1392,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
-                    lastName8 = nameSplit8[1];
+                    lastName8 = nameSplit8[1].ToUpper();
                     printPreviewDialog9.Document = printDocument9;
+                    ((Form)printPreviewDialog9).Text = "Table U8 Print Preview " + date;
+                    ((Form)printPreviewDialog9).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog9.ShowDialog() == DialogResult.OK)
                     {
                         printDocument9.Print();
@@ -925,8 +1412,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
-                    lastName9 = nameSplit9[1];
+                    lastName9 = nameSplit9[1].ToUpper();
                     printPreviewDialog10.Document = printDocument10;
+                    ((Form)printPreviewDialog10).Text = "Table U9 Print Preview " + date;
+                    ((Form)printPreviewDialog10).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog10.ShowDialog() == DialogResult.OK)
                     {
                         printDocument10.Print();
@@ -943,8 +1432,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
-                    lastName10 = nameSplit10[1];
+                    lastName10 = nameSplit10[1].ToUpper();
                     printPreviewDialog11.Document = printDocument11;
+                    ((Form)printPreviewDialog11).Text = "Table U10 Print Preview " + date;
+                    ((Form)printPreviewDialog11).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog11.ShowDialog() == DialogResult.OK)
                     {
                         printDocument11.Print();
@@ -961,8 +1452,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
-                    lastName11 = nameSplit11[1];
+                    lastName11 = nameSplit11[1].ToUpper();
                     printPreviewDialog12.Document = printDocument12;
+                    ((Form)printPreviewDialog12).Text = "Table U11 Print Preview " + date;
+                    ((Form)printPreviewDialog12).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog12.ShowDialog() == DialogResult.OK)
                     {
                         printDocument12.Print();
@@ -979,8 +1472,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
-                    lastName12 = nameSplit12[1];
+                    lastName12 = nameSplit12[1].ToUpper();
                     printPreviewDialog13.Document = printDocument13;
+                    ((Form)printPreviewDialog13).Text = "Table U12 Print Preview " + date;
+                    ((Form)printPreviewDialog13).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog13.ShowDialog() == DialogResult.OK)
                     {
                         printDocument13.Print();
@@ -997,8 +1492,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
-                    lastName13 = nameSplit13[1];
+                    lastName13 = nameSplit13[1].ToUpper();
                     printPreviewDialog14.Document = printDocument14;
+                    ((Form)printPreviewDialog14).Text = "Table G1 Print Preview " + date;
+                    ((Form)printPreviewDialog14).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog14.ShowDialog() == DialogResult.OK)
                     {
                         printDocument14.Print();//the next few pages will need to print twice
@@ -1016,8 +1513,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
-                    lastName14 = nameSplit14[1];
+                    lastName14 = nameSplit14[1].ToUpper();
                     printPreviewDialog15.Document = printDocument15;
+                    ((Form)printPreviewDialog15).Text = "Table G2 Print Preview " + date;
+                    ((Form)printPreviewDialog15).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog15.ShowDialog() == DialogResult.OK)
                     {
                         printDocument15.Print();
@@ -1035,8 +1534,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
-                    lastName15 = nameSplit15[1];
+                    lastName15 = nameSplit15[1].ToUpper();
                     printPreviewDialog16.Document = printDocument16;
+                    ((Form)printPreviewDialog16).Text = "Table G3 Print Preview " + date;
+                    ((Form)printPreviewDialog16).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog16.ShowDialog() == DialogResult.OK)
                     {
                         printDocument16.Print();
@@ -1054,8 +1555,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
-                    lastName16 = nameSplit16[1];
+                    lastName16 = nameSplit16[1].ToUpper();
                     printPreviewDialog17.Document = printDocument17;
+                    ((Form)printPreviewDialog17).Text = "Table G4 Print Preview " + date;
+                    ((Form)printPreviewDialog17).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog17.ShowDialog() == DialogResult.OK)
                     {
                         printDocument17.Print();
@@ -1073,8 +1576,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
-                    lastName17 = nameSplit17[1];
+                    lastName17 = nameSplit17[1].ToUpper();
                     printPreviewDialog18.Document = printDocument18;
+                    ((Form)printPreviewDialog18).Text = "Table G5 Print Preview " + date;
+                    ((Form)printPreviewDialog18).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog18.ShowDialog() == DialogResult.OK)
                     {
                         printDocument18.Print();
@@ -1092,8 +1597,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
-                    lastName18 = nameSplit18[1];
+                    lastName18 = nameSplit18[1].ToUpper();
                     printPreviewDialog19.Document = printDocument19;
+                    ((Form)printPreviewDialog19).Text = "Table G6 Print Preview " + date;
+                    ((Form)printPreviewDialog19).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog19.ShowDialog() == DialogResult.OK)
                     {
                         printDocument19.Print();
@@ -1111,8 +1618,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
-                    lastName19 = nameSplit19[1];
+                    lastName19 = nameSplit19[1].ToUpper();
                     printPreviewDialog20.Document = printDocument20;
+                    ((Form)printPreviewDialog20).Text = "Table R1 Print Preview " + date;
+                    ((Form)printPreviewDialog20).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog20.ShowDialog() == DialogResult.OK)
                     {
                         printDocument20.Print();
@@ -1129,8 +1638,10 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
-                    lastName20 = nameSplit20[1];
+                    lastName20 = nameSplit20[1].ToUpper();
                     printPreviewDialog21.Document = printDocument21;
+                    ((Form)printPreviewDialog21).Text = "Table R2 Print Preview " + date;
+                    ((Form)printPreviewDialog21).WindowState = FormWindowState.Maximized;
                     if (printPreviewDialog21.ShowDialog() == DialogResult.OK)
                     {
                         printDocument21.Print();
@@ -1143,150 +1654,148 @@ namespace BTFFCPartyScheduler
             }
         }
 
+        Font font1 = new Font("Times New Roman", 110, FontStyle.Bold);
+        Font font2 = new Font("Times New Roman", 50, FontStyle.Bold);
+        Font font3 = new Font("Times New Roman", 64, FontStyle.Bold);
+
         private void printDocument2_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName1, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName1, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName1, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument3_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName2, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName2, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName2, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 850);
         }
 
         private void printDocument4_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName3, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName3, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName3, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument5_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName4, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName4, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName4, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument6_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName5, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName5, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName5, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument7_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName6, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName6, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName6, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument8_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName7, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName7, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName7, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument9_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName8, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName8, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName8, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument10_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName9, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName9, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName9, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument11_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName10, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName10, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName10, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument12_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName11, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName11, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName11, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument13_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName12, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName12, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName12, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument14_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName13, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName13, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName13, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument15_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-          //  e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName14, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName14, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName14, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument16_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName15, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName15, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName15, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument17_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-           // e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName16, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName16, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName16, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument18_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            //e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName17, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName17, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName17, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument19_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            //e.PageSettings.PrinterSettings.Copies = 2; //sets the number of copies of this page that will print
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName18, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName18, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName18, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument20_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName19, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName19, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName19, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void printDocument21_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Reserved", new Font("Times New Roman", 110, FontStyle.Bold), Brushes.Black, 90, 75);
-            e.Graphics.DrawString(lastName20, new Font("Times New Roman", 90, FontStyle.Bold), Brushes.Black, 200, 450);
-            e.Graphics.DrawString(date, new Font("Times New Roman", 64, FontStyle.Bold), Brushes.Black, 300, 900);
+            e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
+            e.Graphics.DrawString(lastName20, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName20, font2).Width / 2, 500);
+            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
         }
 
         private void button3_Click(object sender, EventArgs e) //print all party table papers button
@@ -1297,7 +1806,7 @@ namespace BTFFCPartyScheduler
                 try //see if there is a last name
                 {
                     nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
-                    lastName1 = nameSplit1[1];
+                    lastName1 = nameSplit1[1].ToUpper(); //makes the last name all caps
                     printPreviewDialog2.Document = printDocument2;
                     printDocument2.Print();
 
@@ -1313,7 +1822,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
-                    lastName2 = nameSplit2[1];
+                    lastName2 = nameSplit2[1].ToUpper();
                     printPreviewDialog3.Document = printDocument3;
                     printDocument3.Print();
                 }
@@ -1328,7 +1837,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
-                    lastName3 = nameSplit3[1];
+                    lastName3 = nameSplit3[1].ToUpper();
                     printPreviewDialog4.Document = printDocument4;
                     printDocument4.Print();
                 }
@@ -1343,7 +1852,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
-                    lastName4 = nameSplit4[1];
+                    lastName4 = nameSplit4[1].ToUpper();
                     printPreviewDialog5.Document = printDocument5;
                     printDocument5.Print();
                 }
@@ -1358,7 +1867,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
-                    lastName5 = nameSplit5[1];
+                    lastName5 = nameSplit5[1].ToUpper();
                     printPreviewDialog6.Document = printDocument6;
                     printDocument6.Print();
                 }
@@ -1373,7 +1882,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
-                    lastName6 = nameSplit6[1];
+                    lastName6 = nameSplit6[1].ToUpper();
                     printPreviewDialog7.Document = printDocument7;
                     printDocument7.Print();
                 }
@@ -1388,7 +1897,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
-                    lastName7 = nameSplit7[1];
+                    lastName7 = nameSplit7[1].ToUpper();
                     printPreviewDialog8.Document = printDocument8;
                     printDocument8.Print();
                 }
@@ -1403,7 +1912,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
-                    lastName8 = nameSplit8[1];
+                    lastName8 = nameSplit8[1].ToUpper();
                     printPreviewDialog9.Document = printDocument9;
                     printDocument9.Print();
                 }
@@ -1418,7 +1927,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
-                    lastName9 = nameSplit9[1];
+                    lastName9 = nameSplit9[1].ToUpper();
                     printPreviewDialog10.Document = printDocument10;
                     printDocument10.Print();
                 }
@@ -1433,7 +1942,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
-                    lastName10 = nameSplit10[1];
+                    lastName10 = nameSplit10[1].ToUpper();
                     printPreviewDialog11.Document = printDocument11;
                     printDocument11.Print();
                 }
@@ -1448,7 +1957,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
-                    lastName11 = nameSplit11[1];
+                    lastName11 = nameSplit11[1].ToUpper();
                     printPreviewDialog12.Document = printDocument12;
                     printDocument12.Print();
                 }
@@ -1463,9 +1972,9 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
-                    lastName12 = nameSplit12[1];
+                    lastName12 = nameSplit12[1].ToUpper();
                     printPreviewDialog13.Document = printDocument13;
-                    printDocument13.Print();                    
+                    printDocument13.Print();
                 }
                 catch
                 {
@@ -1478,7 +1987,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
-                    lastName13 = nameSplit13[1];
+                    lastName13 = nameSplit13[1].ToUpper();
                     printPreviewDialog14.Document = printDocument14;
                     printDocument14.Print();
                     printDocument14.Print();//the next few pages will need to print twice
@@ -1494,7 +2003,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
-                    lastName14 = nameSplit14[1];
+                    lastName14 = nameSplit14[1].ToUpper();
                     printPreviewDialog15.Document = printDocument15;
                     printDocument15.Print();
                     printDocument15.Print();
@@ -1510,7 +2019,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
-                    lastName15 = nameSplit15[1];
+                    lastName15 = nameSplit15[1].ToUpper();
                     printPreviewDialog16.Document = printDocument16;
                     printDocument16.Print();
                     printDocument16.Print();
@@ -1526,7 +2035,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
-                    lastName16 = nameSplit16[1];
+                    lastName16 = nameSplit16[1].ToUpper();
                     printPreviewDialog17.Document = printDocument17;
                     printDocument17.Print();
                     printDocument17.Print();
@@ -1542,7 +2051,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
-                    lastName17 = nameSplit17[1];
+                    lastName17 = nameSplit17[1].ToUpper();
                     printPreviewDialog18.Document = printDocument18;
                     printDocument18.Print();
                     printDocument18.Print();
@@ -1558,7 +2067,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
-                    lastName18 = nameSplit18[1];
+                    lastName18 = nameSplit18[1].ToUpper();
                     printPreviewDialog19.Document = printDocument19;
                     printDocument19.Print();
                     printDocument19.Print();
@@ -1574,7 +2083,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
-                    lastName19 = nameSplit19[1];
+                    lastName19 = nameSplit19[1].ToUpper();
                     printPreviewDialog20.Document = printDocument20;
                     printDocument20.Print();
                 }
@@ -1589,7 +2098,7 @@ namespace BTFFCPartyScheduler
                 try
                 {
                     nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
-                    lastName20 = nameSplit20[1];
+                    lastName20 = nameSplit20[1].ToUpper();
                     printPreviewDialog21.Document = printDocument21;
                     printDocument21.Print();
                 }
