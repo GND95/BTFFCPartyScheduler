@@ -16,10 +16,12 @@ namespace BTFFCPartyScheduler
     public partial class Form2 : Form
     {
         bool getInitialData = true; //use this to pull the information from the text files when this form is opened for the first time
+        bool getInitialData2 = true; //use this to pull the information from the text files when this form is opened for the first time for the combo boxes
         public string day; //getting the day of the week from the calendar selection
         public string date; //getting the date of the week from the calendar selection
         public string finalDate; //used for getting the date
-        public string filePath; //used for getting setting the file path       
+        public string filePath; //used for getting the file path for the text boxes       
+        public string filePath2; //used for getting the file path for the combo boxes
         public string lastName1; // used for printing the peron's last name from textbox1     
         public string lastName2;
         public string lastName3;
@@ -97,64 +99,64 @@ namespace BTFFCPartyScheduler
             //these combo boxes are for the package type and for the time
             comboBox1.Items.AddRange(new string[] { "A", "B" });
             comboBox2.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox3.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox3.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox4.Items.AddRange(new string[] { "A", "B" });
             comboBox5.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox6.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox6.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox7.Items.AddRange(new string[] { "A", "B" });
             comboBox8.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox9.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox9.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox10.Items.AddRange(new string[] { "A", "B" });
             comboBox11.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox12.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox12.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox13.Items.AddRange(new string[] { "A", "B" });
             comboBox14.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox15.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox15.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox16.Items.AddRange(new string[] { "A", "B" });
             comboBox17.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox18.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox18.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox19.Items.AddRange(new string[] { "A", "B" });
             comboBox20.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox21.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox21.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox22.Items.AddRange(new string[] { "A", "B" });
             comboBox23.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox24.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox24.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox25.Items.AddRange(new string[] { "A", "B" });
             comboBox26.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox27.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox27.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox28.Items.AddRange(new string[] { "A", "B" });
             comboBox29.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox30.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox30.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox31.Items.AddRange(new string[] { "A", "B" });
             comboBox32.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox33.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox33.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox34.Items.AddRange(new string[] { "A", "B" });
             comboBox35.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox36.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox36.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox37.Items.AddRange(new string[] { "A", "B" });
             comboBox38.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox39.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox39.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox40.Items.AddRange(new string[] { "A", "B" });
             comboBox41.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox42.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox42.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox43.Items.AddRange(new string[] { "A", "B" });
             comboBox44.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox45.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox45.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox46.Items.AddRange(new string[] { "A", "B" });
             comboBox47.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox48.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox48.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox49.Items.AddRange(new string[] { "A", "B" });
             comboBox50.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox51.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox51.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox52.Items.AddRange(new string[] { "A", "B" });
             comboBox53.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox54.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox54.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox55.Items.AddRange(new string[] { "A", "B" });
             comboBox56.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox57.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox57.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
             comboBox58.Items.AddRange(new string[] { "A", "B" });
             comboBox59.Items.AddRange(new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            comboBox60.Items.AddRange(new string[] { "00", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
+            comboBox60.Items.AddRange(new string[] { "00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55" });
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //check boxes to copy text
@@ -968,7 +970,8 @@ namespace BTFFCPartyScheduler
         private void timer2_Tick(object sender, EventArgs e)
         {
             finalDate = date.Replace('/', '-');  //replace the "/" with "-" because the first symbol is not allowed in the name of items in Windows
-            filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/" + finalDate + ".txt"; //path to my text files that i plan to save to            
+            filePath = "C:/Program Files/BTFFCPartyProgram/PartyData/Textbox/" + finalDate + ".txt"; //path to my text files that i plan to save to 
+            filePath2 = "C:/Program Files/BTFFCPartyProgram/PartyData/Combobox/" + "comboBox_" + finalDate + ".txt"; //path to my text files that i plan to save to for the combo boxes
 
             //save to the text files here, naming the text files based on the date selected, seperating each text box by a new line
 
@@ -1037,6 +1040,338 @@ namespace BTFFCPartyScheduler
                 for (int i = 0; i < 25; i++)
                 {
                     File.AppendAllText(filePath, Environment.NewLine); //add the lines to the textfile so that the array index is not out of range
+                }
+            }
+
+            //code for the combo boxes
+
+            if (File.Exists(filePath2))   // if exists then read from the file and put into the textboxes
+            {
+                if (getInitialData2 == true) //if this is true then this form needs to read from the text file to get the combobox data
+                {
+                    string GetLine(string fileName, int line)
+                    {
+                        using (var sr = new StreamReader(fileName))
+                        {
+                            for (int i = 1; i < line; i++)
+                                sr.ReadLine();
+                            return sr.ReadLine();
+                        }
+                    }
+
+                    if (GetLine(filePath2, 1) != "") //keep the program from trying to convert a blank line to an int and crashing
+                    {
+                        comboBox1.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 1));
+                    }
+                    if (GetLine(filePath2, 2) != "")
+                    {
+                        comboBox2.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 2));
+                    }
+                    if (GetLine(filePath2, 3) != "")
+                    {
+                        comboBox3.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 3));
+                    }
+                    if (GetLine(filePath2, 4) != "")
+                    {
+                        comboBox4.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 4));
+                    }
+                    if (GetLine(filePath2, 5) != "")
+                    {
+                        comboBox5.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 5));
+                    }
+                    if (GetLine(filePath2, 6) != "")
+                    {
+                        comboBox6.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 6));
+                    }
+                    if (GetLine(filePath2, 7) != "")
+                    {
+                        comboBox7.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 7));
+                    }
+                    if (GetLine(filePath2, 8) != "")
+                    {
+                        comboBox8.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 8));
+                    }
+                    if (GetLine(filePath2, 9) != "")
+                    {
+                        comboBox9.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 9));
+                    }
+                    if (GetLine(filePath2, 10) != "")
+                    {
+                        comboBox10.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 10));
+                    }
+                    if (GetLine(filePath2, 11) != "")
+                    {
+                        comboBox11.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 11));
+                    }
+                    if (GetLine(filePath2, 12) != "")
+                    {
+                        comboBox12.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 12));
+                    }
+                    if (GetLine(filePath2, 13) != "")
+                    {
+                        comboBox13.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 13));
+                    }
+                    if (GetLine(filePath2, 14) != "")
+                    {
+                        comboBox14.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 14));
+                    }
+                    if (GetLine(filePath2, 15) != "")
+                    {
+                        comboBox15.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 15));
+                    }
+                    if (GetLine(filePath2, 16) != "") 
+                    {
+                        comboBox16.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 16));
+                    }
+                    if (GetLine(filePath2, 17) != "")
+                    {
+                        comboBox17.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 17));
+                    }
+                    if (GetLine(filePath2, 18) != "")
+                    {
+                        comboBox18.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 18));
+                    }
+                    if (GetLine(filePath2, 19) != "")
+                    {
+                        comboBox19.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 19));
+                    }
+                    if (GetLine(filePath2, 20) != "")
+                    {
+                        comboBox20.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 20));
+                    }
+                    if (GetLine(filePath2, 21) != "")
+                    {
+                        comboBox21.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 21));
+                    }
+                    if (GetLine(filePath2, 22) != "")
+                    {
+                        comboBox22.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 22));
+                    }
+                    if (GetLine(filePath2, 23) != "")
+                    {
+                        comboBox23.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 23));
+                    }
+                    if (GetLine(filePath2, 24) != "")
+                    {
+                        comboBox24.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 24));
+                    }
+                    if (GetLine(filePath2, 25) != "")
+                    {
+                        comboBox25.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 25));
+                    }
+                    if (GetLine(filePath2, 26) != "")
+                    {
+                        comboBox26.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 26));
+                    }
+                    if (GetLine(filePath2, 27) != "")
+                    {
+                        comboBox27.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 27));
+                    }
+                    if (GetLine(filePath2, 28) != "")
+                    {
+                        comboBox28.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 28));
+                    }
+                    if (GetLine(filePath2, 29) != "")
+                    {
+                        comboBox29.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 29));
+                    }
+                    if (GetLine(filePath2, 30) != "")
+                    {
+                        comboBox30.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 30));
+                    }
+                    if (GetLine(filePath2, 31) != "")
+                    {
+                        comboBox31.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 31));
+                    }
+                    if (GetLine(filePath2, 32) != "")
+                    {
+                        comboBox32.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 32));
+                    }
+                    if (GetLine(filePath2, 33) != "")
+                    {
+                        comboBox33.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 33));
+                    }
+                    if (GetLine(filePath2, 34) != "")
+                    {
+                        comboBox34.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 34));
+                    }
+                    if (GetLine(filePath2, 35) != "")
+                    {
+                        comboBox35.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 35));
+                    }
+                    if (GetLine(filePath2, 36) != "")
+                    {
+                        comboBox36.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 36));
+                    }
+                    if (GetLine(filePath2, 37) != "")
+                    {
+                        comboBox37.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 37));
+                    }
+                    if (GetLine(filePath2, 38) != "")
+                    {
+                        comboBox38.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 38));
+                    }
+                    if (GetLine(filePath2, 39) != "")
+                    {
+                        comboBox39.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 39));
+                    }
+                    if (GetLine(filePath2, 40) != "")
+                    {
+                        comboBox40.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 40));
+                    }
+                    if (GetLine(filePath2, 41) != "")
+                    {
+                        comboBox41.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 41));
+                    }
+                    if (GetLine(filePath2, 42) != "")
+                    {
+                        comboBox42.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 42));
+                    }
+                    if (GetLine(filePath2, 43) != "")
+                    {
+                        comboBox43.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 43));
+                    }
+                    if (GetLine(filePath2, 44) != "")
+                    {
+                        comboBox44.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 44));
+                    }
+                    if (GetLine(filePath2, 45) != "")
+                    {
+                        comboBox45.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 45));
+                    }
+                    if (GetLine(filePath2, 46) != "")
+                    {
+                        comboBox46.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 46));
+                    }
+                    if (GetLine(filePath2, 47) != "")
+                    {
+                        comboBox47.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 47));
+                    }
+                    if (GetLine(filePath2, 48) != "")
+                    {
+                        comboBox48.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 48));
+                    }
+                    if (GetLine(filePath2, 49) != "")
+                    {
+                        comboBox49.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 49));
+                    }
+                    if (GetLine(filePath2, 50) != "")
+                    {
+                        comboBox50.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 50));
+                    }
+                    if (GetLine(filePath2, 51) != "")
+                    {
+                        comboBox51.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 51));
+                    }
+                    if (GetLine(filePath2, 52) != "")
+                    {
+                        comboBox52.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 52));
+                    }
+                    if (GetLine(filePath2, 53) != "")
+                    {
+                        comboBox53.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 53));
+                    }
+                    if (GetLine(filePath2, 54) != "")
+                    {
+                        comboBox54.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 54));
+                    }
+                    if (GetLine(filePath2, 55) != "")
+                    {
+                        comboBox55.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 55));
+                    }
+                    if (GetLine(filePath2, 56) != "")
+                    {
+                        comboBox56.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 56));
+                    }
+                    if (GetLine(filePath2, 57) != "")
+                    {
+                        comboBox57.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 57));
+                    }
+                    if (GetLine(filePath2, 58) != "")
+                    {
+                        comboBox58.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 58));
+                    }
+                    if (GetLine(filePath2, 59) != "")
+                    {
+                        comboBox59.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 59));
+                    }
+                    if (GetLine(filePath2, 60) != "")
+                    {
+                        comboBox60.SelectedIndex = Convert.ToInt32(GetLine(filePath2, 60));
+                    }
+
+                    getInitialData2 = false;
+                }
+
+                lineRewriter(comboBox1.SelectedIndex.ToString(), filePath2, 1);
+                lineRewriter(comboBox2.SelectedIndex.ToString(), filePath2, 2);
+                lineRewriter(comboBox3.SelectedIndex.ToString(), filePath2, 3);
+                lineRewriter(comboBox4.SelectedIndex.ToString(), filePath2, 4);
+                lineRewriter(comboBox5.SelectedIndex.ToString(), filePath2, 5);
+                lineRewriter(comboBox6.SelectedIndex.ToString(), filePath2, 6);
+                lineRewriter(comboBox7.SelectedIndex.ToString(), filePath2, 7);
+                lineRewriter(comboBox8.SelectedIndex.ToString(), filePath2, 8);
+                lineRewriter(comboBox9.SelectedIndex.ToString(), filePath2, 9);
+                lineRewriter(comboBox10.SelectedIndex.ToString(), filePath2, 10);
+                lineRewriter(comboBox11.SelectedIndex.ToString(), filePath2, 11);
+                lineRewriter(comboBox12.SelectedIndex.ToString(), filePath2, 12);
+                lineRewriter(comboBox13.SelectedIndex.ToString(), filePath2, 13);
+                lineRewriter(comboBox14.SelectedIndex.ToString(), filePath2, 14);
+                lineRewriter(comboBox15.SelectedIndex.ToString(), filePath2, 15);
+                lineRewriter(comboBox16.SelectedIndex.ToString(), filePath2, 16);
+                lineRewriter(comboBox17.SelectedIndex.ToString(), filePath2, 17);
+                lineRewriter(comboBox18.SelectedIndex.ToString(), filePath2, 18);
+                lineRewriter(comboBox19.SelectedIndex.ToString(), filePath2, 19);
+                lineRewriter(comboBox20.SelectedIndex.ToString(), filePath2, 20);
+                lineRewriter(comboBox21.SelectedIndex.ToString(), filePath2, 21);
+                lineRewriter(comboBox22.SelectedIndex.ToString(), filePath2, 22);
+                lineRewriter(comboBox23.SelectedIndex.ToString(), filePath2, 23);
+                lineRewriter(comboBox24.SelectedIndex.ToString(), filePath2, 24);
+                lineRewriter(comboBox25.SelectedIndex.ToString(), filePath2, 25);
+                lineRewriter(comboBox26.SelectedIndex.ToString(), filePath2, 26);
+                lineRewriter(comboBox27.SelectedIndex.ToString(), filePath2, 27);
+                lineRewriter(comboBox28.SelectedIndex.ToString(), filePath2, 28);
+                lineRewriter(comboBox29.SelectedIndex.ToString(), filePath2, 29);
+                lineRewriter(comboBox30.SelectedIndex.ToString(), filePath2, 30);
+                lineRewriter(comboBox31.SelectedIndex.ToString(), filePath2, 31);
+                lineRewriter(comboBox32.SelectedIndex.ToString(), filePath2, 32);
+                lineRewriter(comboBox33.SelectedIndex.ToString(), filePath2, 33);
+                lineRewriter(comboBox34.SelectedIndex.ToString(), filePath2, 34);
+                lineRewriter(comboBox35.SelectedIndex.ToString(), filePath2, 35);
+                lineRewriter(comboBox36.SelectedIndex.ToString(), filePath2, 36);
+                lineRewriter(comboBox37.SelectedIndex.ToString(), filePath2, 37);
+                lineRewriter(comboBox38.SelectedIndex.ToString(), filePath2, 38);
+                lineRewriter(comboBox39.SelectedIndex.ToString(), filePath2, 39);
+                lineRewriter(comboBox40.SelectedIndex.ToString(), filePath2, 40);
+                lineRewriter(comboBox41.SelectedIndex.ToString(), filePath2, 41);
+                lineRewriter(comboBox42.SelectedIndex.ToString(), filePath2, 42);
+                lineRewriter(comboBox43.SelectedIndex.ToString(), filePath2, 43);
+                lineRewriter(comboBox44.SelectedIndex.ToString(), filePath2, 44);
+                lineRewriter(comboBox45.SelectedIndex.ToString(), filePath2, 45);
+                lineRewriter(comboBox46.SelectedIndex.ToString(), filePath2, 46);
+                lineRewriter(comboBox47.SelectedIndex.ToString(), filePath2, 47);
+                lineRewriter(comboBox48.SelectedIndex.ToString(), filePath2, 48);
+                lineRewriter(comboBox49.SelectedIndex.ToString(), filePath2, 49);
+                lineRewriter(comboBox50.SelectedIndex.ToString(), filePath2, 50);
+                lineRewriter(comboBox51.SelectedIndex.ToString(), filePath2, 51);
+                lineRewriter(comboBox52.SelectedIndex.ToString(), filePath2, 52);
+                lineRewriter(comboBox53.SelectedIndex.ToString(), filePath2, 53);
+                lineRewriter(comboBox54.SelectedIndex.ToString(), filePath2, 54);
+                lineRewriter(comboBox55.SelectedIndex.ToString(), filePath2, 55);
+                lineRewriter(comboBox56.SelectedIndex.ToString(), filePath2, 56);
+                lineRewriter(comboBox57.SelectedIndex.ToString(), filePath2, 57);
+                lineRewriter(comboBox58.SelectedIndex.ToString(), filePath2, 58);
+                lineRewriter(comboBox59.SelectedIndex.ToString(), filePath2, 59);
+                lineRewriter(comboBox60.SelectedIndex.ToString(), filePath2, 60);
+                //continue this for all the combo boxes
+            }
+            else
+            {
+                StreamWriter write = new StreamWriter(filePath2); //this creates the new file if it doesn't already exist, requires admin permission to write to this folder -> need to run program as administrator
+                write.Close();
+                for (int i = 0; i < 75; i++)
+                {
+                    File.AppendAllText(filePath2, Environment.NewLine); //add the lines to the textfile so that the array index is not out of range
                 }
             }
         }

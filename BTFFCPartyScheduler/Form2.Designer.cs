@@ -613,12 +613,12 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.checkBox1.Location = new System.Drawing.Point(221, 436);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(41, 17);
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.TabStop = false;
-            this.checkBox1.Text = "--->";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -627,10 +627,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(443, 435);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(41, 17);
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 0;
             this.checkBox2.TabStop = false;
-            this.checkBox2.Text = "--->";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -639,82 +638,75 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(664, 435);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(41, 17);
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 0;
             this.checkBox3.TabStop = false;
-            this.checkBox3.Text = "--->";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(886, 433);
+            this.checkBox4.Location = new System.Drawing.Point(886, 436);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(41, 17);
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 0;
             this.checkBox4.TabStop = false;
-            this.checkBox4.Text = "--->";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(1, 514);
+            this.checkBox5.Location = new System.Drawing.Point(0, 519);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(41, 17);
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 0;
             this.checkBox5.TabStop = false;
-            this.checkBox5.Text = "--->";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(221, 520);
+            this.checkBox6.Location = new System.Drawing.Point(221, 519);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(41, 17);
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 0;
             this.checkBox6.TabStop = false;
-            this.checkBox6.Text = "--->";
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(443, 517);
+            this.checkBox7.Location = new System.Drawing.Point(443, 518);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(41, 17);
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 0;
             this.checkBox7.TabStop = false;
-            this.checkBox7.Text = "--->";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(664, 517);
+            this.checkBox8.Location = new System.Drawing.Point(664, 519);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(41, 17);
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
             this.checkBox8.TabIndex = 0;
             this.checkBox8.TabStop = false;
-            this.checkBox8.Text = "--->";
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(886, 517);
+            this.checkBox9.Location = new System.Drawing.Point(886, 519);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(41, 17);
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
             this.checkBox9.TabIndex = 0;
             this.checkBox9.TabStop = false;
-            this.checkBox9.Text = "--->";
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
@@ -723,10 +715,9 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(1, 597);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(41, 17);
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 0;
             this.checkBox10.TabStop = false;
-            this.checkBox10.Text = "--->";
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
@@ -735,10 +726,9 @@
             this.checkBox11.AutoSize = true;
             this.checkBox11.Location = new System.Drawing.Point(221, 597);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(41, 17);
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
             this.checkBox11.TabIndex = 0;
             this.checkBox11.TabStop = false;
-            this.checkBox11.Text = "--->";
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
@@ -747,46 +737,42 @@
             this.checkBox12.AutoSize = true;
             this.checkBox12.Location = new System.Drawing.Point(443, 597);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(41, 17);
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
             this.checkBox12.TabIndex = 0;
             this.checkBox12.TabStop = false;
-            this.checkBox12.Text = "--->";
             this.checkBox12.UseVisualStyleBackColor = true;
             this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // checkBox13
             // 
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(664, 594);
+            this.checkBox13.Location = new System.Drawing.Point(664, 597);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(41, 17);
+            this.checkBox13.Size = new System.Drawing.Size(15, 14);
             this.checkBox13.TabIndex = 0;
             this.checkBox13.TabStop = false;
-            this.checkBox13.Text = "--->";
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(886, 594);
+            this.checkBox14.Location = new System.Drawing.Point(886, 597);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(41, 17);
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
             this.checkBox14.TabIndex = 0;
             this.checkBox14.TabStop = false;
-            this.checkBox14.Text = "--->";
             this.checkBox14.UseVisualStyleBackColor = true;
             this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(3, 680);
+            this.checkBox15.Location = new System.Drawing.Point(3, 682);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(41, 17);
+            this.checkBox15.Size = new System.Drawing.Size(15, 14);
             this.checkBox15.TabIndex = 0;
             this.checkBox15.TabStop = false;
-            this.checkBox15.Text = "--->";
             this.checkBox15.UseVisualStyleBackColor = true;
             this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
@@ -795,10 +781,9 @@
             this.checkBox16.AutoSize = true;
             this.checkBox16.Location = new System.Drawing.Point(221, 681);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(41, 17);
+            this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 0;
             this.checkBox16.TabStop = false;
-            this.checkBox16.Text = "--->";
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
@@ -807,10 +792,9 @@
             this.checkBox17.AutoSize = true;
             this.checkBox17.Location = new System.Drawing.Point(443, 681);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(41, 17);
+            this.checkBox17.Size = new System.Drawing.Size(15, 14);
             this.checkBox17.TabIndex = 0;
             this.checkBox17.TabStop = false;
-            this.checkBox17.Text = "--->";
             this.checkBox17.UseVisualStyleBackColor = true;
             this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
@@ -1421,7 +1405,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(119, 432);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(35, 21);
+            this.comboBox2.Size = new System.Drawing.Size(38, 21);
             this.comboBox2.TabIndex = 47;
             this.comboBox2.TabStop = false;
             // 
@@ -1451,7 +1435,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(337, 431);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(35, 21);
+            this.comboBox5.Size = new System.Drawing.Size(38, 21);
             this.comboBox5.TabIndex = 47;
             this.comboBox5.TabStop = false;
             // 
@@ -1481,7 +1465,7 @@
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(559, 431);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(35, 21);
+            this.comboBox8.Size = new System.Drawing.Size(38, 21);
             this.comboBox8.TabIndex = 47;
             this.comboBox8.TabStop = false;
             // 
@@ -1511,7 +1495,7 @@
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Location = new System.Drawing.Point(780, 431);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(35, 21);
+            this.comboBox11.Size = new System.Drawing.Size(38, 21);
             this.comboBox11.TabIndex = 47;
             this.comboBox11.TabStop = false;
             // 
@@ -1541,7 +1525,7 @@
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Location = new System.Drawing.Point(1002, 431);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(35, 21);
+            this.comboBox14.Size = new System.Drawing.Size(38, 21);
             this.comboBox14.TabIndex = 47;
             this.comboBox14.TabStop = false;
             // 
@@ -1571,7 +1555,7 @@
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Location = new System.Drawing.Point(119, 513);
             this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(35, 21);
+            this.comboBox17.Size = new System.Drawing.Size(38, 21);
             this.comboBox17.TabIndex = 47;
             this.comboBox17.TabStop = false;
             // 
@@ -1601,7 +1585,7 @@
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Location = new System.Drawing.Point(337, 513);
             this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(35, 21);
+            this.comboBox20.Size = new System.Drawing.Size(38, 21);
             this.comboBox20.TabIndex = 47;
             this.comboBox20.TabStop = false;
             // 
@@ -1631,7 +1615,7 @@
             this.comboBox23.FormattingEnabled = true;
             this.comboBox23.Location = new System.Drawing.Point(559, 512);
             this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(35, 21);
+            this.comboBox23.Size = new System.Drawing.Size(38, 21);
             this.comboBox23.TabIndex = 47;
             this.comboBox23.TabStop = false;
             // 
@@ -1661,7 +1645,7 @@
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Location = new System.Drawing.Point(780, 512);
             this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(35, 21);
+            this.comboBox26.Size = new System.Drawing.Size(38, 21);
             this.comboBox26.TabIndex = 47;
             this.comboBox26.TabStop = false;
             // 
@@ -1691,7 +1675,7 @@
             this.comboBox29.FormattingEnabled = true;
             this.comboBox29.Location = new System.Drawing.Point(1001, 513);
             this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(35, 21);
+            this.comboBox29.Size = new System.Drawing.Size(38, 21);
             this.comboBox29.TabIndex = 47;
             this.comboBox29.TabStop = false;
             // 
@@ -1721,7 +1705,7 @@
             this.comboBox32.FormattingEnabled = true;
             this.comboBox32.Location = new System.Drawing.Point(116, 594);
             this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(35, 21);
+            this.comboBox32.Size = new System.Drawing.Size(38, 21);
             this.comboBox32.TabIndex = 47;
             this.comboBox32.TabStop = false;
             // 
@@ -1751,7 +1735,7 @@
             this.comboBox35.FormattingEnabled = true;
             this.comboBox35.Location = new System.Drawing.Point(337, 594);
             this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(35, 21);
+            this.comboBox35.Size = new System.Drawing.Size(38, 21);
             this.comboBox35.TabIndex = 47;
             this.comboBox35.TabStop = false;
             // 
@@ -1781,7 +1765,7 @@
             this.comboBox38.FormattingEnabled = true;
             this.comboBox38.Location = new System.Drawing.Point(559, 594);
             this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(35, 21);
+            this.comboBox38.Size = new System.Drawing.Size(38, 21);
             this.comboBox38.TabIndex = 47;
             this.comboBox38.TabStop = false;
             // 
@@ -1811,7 +1795,7 @@
             this.comboBox41.FormattingEnabled = true;
             this.comboBox41.Location = new System.Drawing.Point(780, 594);
             this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(35, 21);
+            this.comboBox41.Size = new System.Drawing.Size(38, 21);
             this.comboBox41.TabIndex = 47;
             this.comboBox41.TabStop = false;
             // 
@@ -1841,7 +1825,7 @@
             this.comboBox44.FormattingEnabled = true;
             this.comboBox44.Location = new System.Drawing.Point(1002, 594);
             this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(35, 21);
+            this.comboBox44.Size = new System.Drawing.Size(38, 21);
             this.comboBox44.TabIndex = 47;
             this.comboBox44.TabStop = false;
             // 
@@ -1871,7 +1855,7 @@
             this.comboBox47.FormattingEnabled = true;
             this.comboBox47.Location = new System.Drawing.Point(119, 678);
             this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(35, 21);
+            this.comboBox47.Size = new System.Drawing.Size(38, 21);
             this.comboBox47.TabIndex = 47;
             this.comboBox47.TabStop = false;
             // 
@@ -1901,7 +1885,7 @@
             this.comboBox50.FormattingEnabled = true;
             this.comboBox50.Location = new System.Drawing.Point(337, 678);
             this.comboBox50.Name = "comboBox50";
-            this.comboBox50.Size = new System.Drawing.Size(35, 21);
+            this.comboBox50.Size = new System.Drawing.Size(38, 21);
             this.comboBox50.TabIndex = 47;
             this.comboBox50.TabStop = false;
             // 
@@ -1931,7 +1915,7 @@
             this.comboBox53.FormattingEnabled = true;
             this.comboBox53.Location = new System.Drawing.Point(780, 678);
             this.comboBox53.Name = "comboBox53";
-            this.comboBox53.Size = new System.Drawing.Size(35, 21);
+            this.comboBox53.Size = new System.Drawing.Size(38, 21);
             this.comboBox53.TabIndex = 47;
             this.comboBox53.TabStop = false;
             // 
@@ -1961,7 +1945,7 @@
             this.comboBox56.FormattingEnabled = true;
             this.comboBox56.Location = new System.Drawing.Point(1002, 678);
             this.comboBox56.Name = "comboBox56";
-            this.comboBox56.Size = new System.Drawing.Size(35, 21);
+            this.comboBox56.Size = new System.Drawing.Size(38, 21);
             this.comboBox56.TabIndex = 47;
             this.comboBox56.TabStop = false;
             // 
@@ -1991,7 +1975,7 @@
             this.comboBox59.FormattingEnabled = true;
             this.comboBox59.Location = new System.Drawing.Point(559, 678);
             this.comboBox59.Name = "comboBox59";
-            this.comboBox59.Size = new System.Drawing.Size(35, 21);
+            this.comboBox59.Size = new System.Drawing.Size(38, 21);
             this.comboBox59.TabIndex = 47;
             this.comboBox59.TabStop = false;
             // 
