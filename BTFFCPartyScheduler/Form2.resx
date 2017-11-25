@@ -2637,10 +2637,6 @@
         wf+0BQAAgAUAAIAFAACAAQAAgAHB/4ABAACAAQAAgAEAALwBAAC8AQAAvAHB/4ABbP///5H/
 </value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Text boxes must start with first name and last name to be able to print the the "Reserved for" papers that are placed on the party tables. This program pulls the second word from the text box as the word that will be used on the "Reserved for" sheet. E.g.
-Smith would be the word pulled from a text box starting with "John Smith"</value>
-  </data>
   <metadata name="printDocument2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>654, 17</value>
   </metadata>
@@ -6221,6 +6217,32 @@ Smith would be the word pulled from a text box starting with "John Smith"</value
   <metadata name="printDocument21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>458, 212</value>
   </metadata>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAn0AAAE9CAIAAADxoUNrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAABL1JREFUeF7t1TEBAAAMw6D5N925yAUmuAEAFe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAHe8CQMe7
+        ANDxLgB0vAsAHe8CQMe7ANDxLgB0vAsAle0BkgymwSVEx8sAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>66</value>
   </metadata>

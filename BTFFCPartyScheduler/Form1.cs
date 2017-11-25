@@ -13,7 +13,7 @@ namespace BTFFCPartyScheduler
     public partial class Form1 : Form
     {
         public Form1()
-        {
+        {           
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -47,7 +47,14 @@ namespace BTFFCPartyScheduler
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version 1.0 (Created November 2017). Program written, coded, designed, and created entirely by Garrett DeBlois, B.S., Computer Science.", "Info");
+            MessageBox.Show("Version 1.1 (Created November 2017). Program written, coded, designed, and created entirely by Garrett DeBlois, B.S., Computer Science.", "Info");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //this button and functionality is not needed by the user
+            button1.Enabled = false;
+            button1.Visible = false;
         }
     }
 }

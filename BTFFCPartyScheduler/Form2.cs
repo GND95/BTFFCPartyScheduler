@@ -89,7 +89,7 @@ namespace BTFFCPartyScheduler
             R1Taken.Visible = false;
             R2Taken.Visible = false;
         }
-
+        
         private void Form2_Load(object sender, EventArgs e)
         {
             label21.Text = day;
@@ -795,17 +795,17 @@ namespace BTFFCPartyScheduler
             bool box19HasText = string.IsNullOrWhiteSpace(richTextBox19.Text);
             bool box20HasText = string.IsNullOrWhiteSpace(richTextBox20.Text);
 
-            //hides the areas on the picture which have already been taken
+            //covers the areas on the picture which have already been taken
             if (box1HasText == false)
-            {
-                U1Taken.Visible = true;
+            {               
+                U1Taken.Visible = true;                
             }
             if (box2HasText == false)
-            {
+            {                
                 U2Taken.Visible = true;
             }
             if (box3HasText == false)
-            {
+            {               
                 U3Taken.Visible = true;
             }
             if (box4HasText == false)
@@ -813,11 +813,11 @@ namespace BTFFCPartyScheduler
                 U4Taken.Visible = true;
             }
             if (box5HasText == false)
-            {
-                U5Taken.Visible = true;
+            {                
+                U5Taken.Visible = true;               
             }
             if (box6HasText == false)
-            {
+            {              
                 U6Taken.Visible = true;
             }
             if (box7HasText == false)
@@ -1569,7 +1569,7 @@ namespace BTFFCPartyScheduler
 
         private void button1_Click(object sender, EventArgs e) //code for print this page button
         {
-            printDocument1.DefaultPageSettings.Landscape = true; ; //changing the picture to print in landscape
+            printDocument1.DefaultPageSettings.Landscape = true; //changing the picture to print in landscape
             Graphics g = this.CreateGraphics();
             bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
             Graphics mg = Graphics.FromImage(bmp);
@@ -1587,7 +1587,8 @@ namespace BTFFCPartyScheduler
                 try //see if there is a last name
                 {
                     nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
-                    lastName1 = nameSplit1[1].ToUpper(); //takes last name and puts it in all caps                   
+                    lastName1 = nameSplit1[1].ToUpper(); //takes last name and puts it in all caps   
+                    this.printDocument2.DefaultPageSettings.Landscape = true;
                     printPreviewDialog2.Document = printDocument2;
                     ((Form)printPreviewDialog2).Text = "Table U1 Print Preview " + date; //change the title of the print preview form
                     ((Form)printPreviewDialog2).WindowState = FormWindowState.Maximized; //maximize the print preview form
@@ -1608,6 +1609,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
                     lastName2 = nameSplit2[1].ToUpper();
+                    this.printDocument3.DefaultPageSettings.Landscape = true;
                     printPreviewDialog3.Document = printDocument3;
                     ((Form)printPreviewDialog3).Text = "Table U2 Print Preview " + date;
                     ((Form)printPreviewDialog3).WindowState = FormWindowState.Maximized;
@@ -1628,6 +1630,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
                     lastName3 = nameSplit3[1].ToUpper();
+                    this.printDocument4.DefaultPageSettings.Landscape = true;
                     printPreviewDialog4.Document = printDocument4;
                     ((Form)printPreviewDialog4).Text = "Table U3 Print Preview " + date;
                     ((Form)printPreviewDialog4).WindowState = FormWindowState.Maximized;
@@ -1648,6 +1651,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
                     lastName4 = nameSplit4[1].ToUpper();
+                    this.printDocument5.DefaultPageSettings.Landscape = true;
                     printPreviewDialog5.Document = printDocument5;
                     ((Form)printPreviewDialog5).Text = "Table U4 Print Preview " + date;
                     ((Form)printPreviewDialog5).WindowState = FormWindowState.Maximized;
@@ -1668,6 +1672,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
                     lastName5 = nameSplit5[1].ToUpper();
+                    this.printDocument6.DefaultPageSettings.Landscape = true;
                     printPreviewDialog6.Document = printDocument6;
                     ((Form)printPreviewDialog6).Text = "Table U5 Print Preview " + date;
                     ((Form)printPreviewDialog6).WindowState = FormWindowState.Maximized;
@@ -1688,6 +1693,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
                     lastName6 = nameSplit6[1].ToUpper();
+                    this.printDocument7.DefaultPageSettings.Landscape = true;
                     printPreviewDialog7.Document = printDocument7;
                     ((Form)printPreviewDialog7).Text = "Table U6 Print Preview " + date;
                     ((Form)printPreviewDialog7).WindowState = FormWindowState.Maximized;
@@ -1708,6 +1714,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
                     lastName7 = nameSplit7[1].ToUpper();
+                    this.printDocument8.DefaultPageSettings.Landscape = true;
                     printPreviewDialog8.Document = printDocument8;
                     ((Form)printPreviewDialog8).Text = "Table U7 Print Preview " + date;
                     ((Form)printPreviewDialog8).WindowState = FormWindowState.Maximized;
@@ -1728,6 +1735,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
                     lastName8 = nameSplit8[1].ToUpper();
+                    this.printDocument9.DefaultPageSettings.Landscape = true;
                     printPreviewDialog9.Document = printDocument9;
                     ((Form)printPreviewDialog9).Text = "Table U8 Print Preview " + date;
                     ((Form)printPreviewDialog9).WindowState = FormWindowState.Maximized;
@@ -1748,6 +1756,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
                     lastName9 = nameSplit9[1].ToUpper();
+                    this.printDocument10.DefaultPageSettings.Landscape = true;
                     printPreviewDialog10.Document = printDocument10;
                     ((Form)printPreviewDialog10).Text = "Table U9 Print Preview " + date;
                     ((Form)printPreviewDialog10).WindowState = FormWindowState.Maximized;
@@ -1768,6 +1777,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
                     lastName10 = nameSplit10[1].ToUpper();
+                    this.printDocument11.DefaultPageSettings.Landscape = true;
                     printPreviewDialog11.Document = printDocument11;
                     ((Form)printPreviewDialog11).Text = "Table U10 Print Preview " + date;
                     ((Form)printPreviewDialog11).WindowState = FormWindowState.Maximized;
@@ -1788,6 +1798,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
                     lastName11 = nameSplit11[1].ToUpper();
+                    this.printDocument12.DefaultPageSettings.Landscape = true;
                     printPreviewDialog12.Document = printDocument12;
                     ((Form)printPreviewDialog12).Text = "Table U11 Print Preview " + date;
                     ((Form)printPreviewDialog12).WindowState = FormWindowState.Maximized;
@@ -1808,6 +1819,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
                     lastName12 = nameSplit12[1].ToUpper();
+                    this.printDocument13.DefaultPageSettings.Landscape = true;
                     printPreviewDialog13.Document = printDocument13;
                     ((Form)printPreviewDialog13).Text = "Table U12 Print Preview " + date;
                     ((Form)printPreviewDialog13).WindowState = FormWindowState.Maximized;
@@ -1828,6 +1840,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
                     lastName13 = nameSplit13[1].ToUpper();
+                    this.printDocument14.DefaultPageSettings.Landscape = true;
                     printPreviewDialog14.Document = printDocument14;
                     ((Form)printPreviewDialog14).Text = "Table G1 Print Preview " + date;
                     ((Form)printPreviewDialog14).WindowState = FormWindowState.Maximized;
@@ -1849,6 +1862,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
                     lastName14 = nameSplit14[1].ToUpper();
+                    this.printDocument15.DefaultPageSettings.Landscape = true;
                     printPreviewDialog15.Document = printDocument15;
                     ((Form)printPreviewDialog15).Text = "Table G2 Print Preview " + date;
                     ((Form)printPreviewDialog15).WindowState = FormWindowState.Maximized;
@@ -1870,6 +1884,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
                     lastName15 = nameSplit15[1].ToUpper();
+                    this.printDocument16.DefaultPageSettings.Landscape = true;
                     printPreviewDialog16.Document = printDocument16;
                     ((Form)printPreviewDialog16).Text = "Table G3 Print Preview " + date;
                     ((Form)printPreviewDialog16).WindowState = FormWindowState.Maximized;
@@ -1891,6 +1906,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
                     lastName16 = nameSplit16[1].ToUpper();
+                    this.printDocument17.DefaultPageSettings.Landscape = true;
                     printPreviewDialog17.Document = printDocument17;
                     ((Form)printPreviewDialog17).Text = "Table G4 Print Preview " + date;
                     ((Form)printPreviewDialog17).WindowState = FormWindowState.Maximized;
@@ -1912,6 +1928,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
                     lastName17 = nameSplit17[1].ToUpper();
+                    this.printDocument18.DefaultPageSettings.Landscape = true;
                     printPreviewDialog18.Document = printDocument18;
                     ((Form)printPreviewDialog18).Text = "Table G5 Print Preview " + date;
                     ((Form)printPreviewDialog18).WindowState = FormWindowState.Maximized;
@@ -1933,6 +1950,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
                     lastName18 = nameSplit18[1].ToUpper();
+                    this.printDocument19.DefaultPageSettings.Landscape = true;
                     printPreviewDialog19.Document = printDocument19;
                     ((Form)printPreviewDialog19).Text = "Table G6 Print Preview " + date;
                     ((Form)printPreviewDialog19).WindowState = FormWindowState.Maximized;
@@ -1954,6 +1972,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
                     lastName19 = nameSplit19[1].ToUpper();
+                    this.printDocument20.DefaultPageSettings.Landscape = true;
                     printPreviewDialog20.Document = printDocument20;
                     ((Form)printPreviewDialog20).Text = "Table R1 Print Preview " + date;
                     ((Form)printPreviewDialog20).WindowState = FormWindowState.Maximized;
@@ -1974,6 +1993,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
                     lastName20 = nameSplit20[1].ToUpper();
+                    this.printDocument21.DefaultPageSettings.Landscape = true;
                     printPreviewDialog21.Document = printDocument21;
                     ((Form)printPreviewDialog21).Text = "Table R2 Print Preview " + date;
                     ((Form)printPreviewDialog21).WindowState = FormWindowState.Maximized;
@@ -1994,143 +2014,143 @@ namespace BTFFCPartyScheduler
         Font font3 = new Font("Times New Roman", 64, FontStyle.Bold);
 
         private void printDocument2_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
+        {            
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName1, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName1, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName1, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName1, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);           
         }
 
         private void printDocument3_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName2, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName2, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 850);
+            e.Graphics.DrawString(lastName2, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName2, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument4_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName3, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName3, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName3, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName3, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument5_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName4, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName4, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName4, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName4, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument6_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName5, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName5, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName5, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName5, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument7_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName6, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName6, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName6, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName6, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument8_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName7, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName7, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName7, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName7, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument9_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName8, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName8, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName8, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName8, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument10_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName9, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName9, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName9, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName9, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument11_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName10, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName10, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName10, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName10, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument12_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName11, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName11, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName11, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName11, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument13_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName12, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName12, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName12, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName12, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument14_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName13, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName13, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName13, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName13, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument15_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName14, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName14, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName14, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName14, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument16_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName15, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName15, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName15, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName15, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument17_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName16, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName16, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName16, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName16, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument18_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName17, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName17, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName17, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName17, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument19_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName18, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName18, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName18, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName18, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument20_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName19, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName19, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName19, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName19, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void printDocument21_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Reserved", font1, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString("Reserved", font1).Width / 2, 75);
-            e.Graphics.DrawString(lastName20, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName20, font2).Width / 2, 500);
-            e.Graphics.DrawString(date, font3, Brushes.Black, 425, 900);
+            e.Graphics.DrawString(lastName20, font2, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(lastName20, font2).Width / 2, 400);
+            e.Graphics.DrawString(date, font3, Brushes.Black, e.PageBounds.Width / 2 - e.Graphics.MeasureString(date, font3).Width / 2, 650);
         }
 
         private void button3_Click(object sender, EventArgs e) //print all party table papers button
@@ -2142,6 +2162,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit1 = richTextBox1.Text.Split(' ').ToList<string>();
                     lastName1 = nameSplit1[1].ToUpper(); //makes the last name all caps
+                    this.printDocument2.DefaultPageSettings.Landscape = true;
                     printPreviewDialog2.Document = printDocument2;
                     printDocument2.Print();
 
@@ -2158,6 +2179,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit2 = richTextBox2.Text.Split(' ').ToList<string>();
                     lastName2 = nameSplit2[1].ToUpper();
+                    this.printDocument3.DefaultPageSettings.Landscape = true;
                     printPreviewDialog3.Document = printDocument3;
                     printDocument3.Print();
                 }
@@ -2173,6 +2195,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit3 = richTextBox3.Text.Split(' ').ToList<string>();
                     lastName3 = nameSplit3[1].ToUpper();
+                    this.printDocument4.DefaultPageSettings.Landscape = true;
                     printPreviewDialog4.Document = printDocument4;
                     printDocument4.Print();
                 }
@@ -2188,6 +2211,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit4 = richTextBox4.Text.Split(' ').ToList<string>();
                     lastName4 = nameSplit4[1].ToUpper();
+                    this.printDocument5.DefaultPageSettings.Landscape = true;
                     printPreviewDialog5.Document = printDocument5;
                     printDocument5.Print();
                 }
@@ -2203,6 +2227,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit5 = richTextBox5.Text.Split(' ').ToList<string>();
                     lastName5 = nameSplit5[1].ToUpper();
+                    this.printDocument6.DefaultPageSettings.Landscape = true;
                     printPreviewDialog6.Document = printDocument6;
                     printDocument6.Print();
                 }
@@ -2218,6 +2243,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit6 = richTextBox6.Text.Split(' ').ToList<string>();
                     lastName6 = nameSplit6[1].ToUpper();
+                    this.printDocument7.DefaultPageSettings.Landscape = true;
                     printPreviewDialog7.Document = printDocument7;
                     printDocument7.Print();
                 }
@@ -2233,6 +2259,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit7 = richTextBox7.Text.Split(' ').ToList<string>();
                     lastName7 = nameSplit7[1].ToUpper();
+                    this.printDocument8.DefaultPageSettings.Landscape = true;
                     printPreviewDialog8.Document = printDocument8;
                     printDocument8.Print();
                 }
@@ -2248,6 +2275,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit8 = richTextBox8.Text.Split(' ').ToList<string>();
                     lastName8 = nameSplit8[1].ToUpper();
+                    this.printDocument9.DefaultPageSettings.Landscape = true;
                     printPreviewDialog9.Document = printDocument9;
                     printDocument9.Print();
                 }
@@ -2263,6 +2291,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit9 = richTextBox9.Text.Split(' ').ToList<string>();
                     lastName9 = nameSplit9[1].ToUpper();
+                    this.printDocument10.DefaultPageSettings.Landscape = true;
                     printPreviewDialog10.Document = printDocument10;
                     printDocument10.Print();
                 }
@@ -2278,6 +2307,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit10 = richTextBox10.Text.Split(' ').ToList<string>();
                     lastName10 = nameSplit10[1].ToUpper();
+                    this.printDocument11.DefaultPageSettings.Landscape = true;
                     printPreviewDialog11.Document = printDocument11;
                     printDocument11.Print();
                 }
@@ -2293,6 +2323,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit11 = richTextBox11.Text.Split(' ').ToList<string>();
                     lastName11 = nameSplit11[1].ToUpper();
+                    this.printDocument12.DefaultPageSettings.Landscape = true;
                     printPreviewDialog12.Document = printDocument12;
                     printDocument12.Print();
                 }
@@ -2308,6 +2339,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit12 = richTextBox12.Text.Split(' ').ToList<string>();
                     lastName12 = nameSplit12[1].ToUpper();
+                    this.printDocument13.DefaultPageSettings.Landscape = true;
                     printPreviewDialog13.Document = printDocument13;
                     printDocument13.Print();
                 }
@@ -2323,6 +2355,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit13 = richTextBox13.Text.Split(' ').ToList<string>();
                     lastName13 = nameSplit13[1].ToUpper();
+                    this.printDocument14.DefaultPageSettings.Landscape = true;
                     printPreviewDialog14.Document = printDocument14;
                     printDocument14.Print();
                     printDocument14.Print();//the next few pages will need to print twice
@@ -2339,6 +2372,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit14 = richTextBox14.Text.Split(' ').ToList<string>();
                     lastName14 = nameSplit14[1].ToUpper();
+                    this.printDocument15.DefaultPageSettings.Landscape = true;
                     printPreviewDialog15.Document = printDocument15;
                     printDocument15.Print();
                     printDocument15.Print();
@@ -2355,6 +2389,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit15 = richTextBox15.Text.Split(' ').ToList<string>();
                     lastName15 = nameSplit15[1].ToUpper();
+                    this.printDocument16.DefaultPageSettings.Landscape = true;
                     printPreviewDialog16.Document = printDocument16;
                     printDocument16.Print();
                     printDocument16.Print();
@@ -2371,6 +2406,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit16 = richTextBox16.Text.Split(' ').ToList<string>();
                     lastName16 = nameSplit16[1].ToUpper();
+                    this.printDocument17.DefaultPageSettings.Landscape = true;
                     printPreviewDialog17.Document = printDocument17;
                     printDocument17.Print();
                     printDocument17.Print();
@@ -2387,6 +2423,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit17 = richTextBox17.Text.Split(' ').ToList<string>();
                     lastName17 = nameSplit17[1].ToUpper();
+                    this.printDocument18.DefaultPageSettings.Landscape = true;
                     printPreviewDialog18.Document = printDocument18;
                     printDocument18.Print();
                     printDocument18.Print();
@@ -2403,6 +2440,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit18 = richTextBox18.Text.Split(' ').ToList<string>();
                     lastName18 = nameSplit18[1].ToUpper();
+                    this.printDocument19.DefaultPageSettings.Landscape = true;
                     printPreviewDialog19.Document = printDocument19;
                     printDocument19.Print();
                     printDocument19.Print();
@@ -2419,6 +2457,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit19 = richTextBox19.Text.Split(' ').ToList<string>();
                     lastName19 = nameSplit19[1].ToUpper();
+                    this.printDocument20.DefaultPageSettings.Landscape = true;
                     printPreviewDialog20.Document = printDocument20;
                     printDocument20.Print();
                 }
@@ -2434,6 +2473,7 @@ namespace BTFFCPartyScheduler
                 {
                     nameSplit20 = richTextBox20.Text.Split(' ').ToList<string>();
                     lastName20 = nameSplit20[1].ToUpper();
+                    this.printDocument21.DefaultPageSettings.Landscape = true;
                     printPreviewDialog21.Document = printDocument21;
                     printDocument21.Print();
                 }
@@ -2443,6 +2483,11 @@ namespace BTFFCPartyScheduler
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Text boxes must start with first name and last name to be able to print the the \"Reserved for\" papers that are placed on the party tables. This program pulls the second word from the text box as the word that will be used on the \"Reserved for\" sheet. E.g. Smith would be the word pulled from a text box starting with \"John Smith\"", "Info");
+        }       
     }
 }
 
