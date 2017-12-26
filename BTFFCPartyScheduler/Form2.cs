@@ -66,8 +66,8 @@ namespace BTFFCPartyScheduler
         public Form2()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            // this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            //this.MaximizeBox = false;           
             U1Taken.Visible = false;
             U2Taken.Visible = false;
             U3Taken.Visible = false;
@@ -92,6 +92,7 @@ namespace BTFFCPartyScheduler
         
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             label21.Text = day;
             label22.Text = date;
             timer1.Start();
